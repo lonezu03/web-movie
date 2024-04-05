@@ -1,29 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 
-const home=() =>{
+const Home = () => {
+  const [showForm, setShowForm] = useState<boolean>(false);
 
-    return(
-       <div id="home">
-        <img id="home-bg" width="100%" height="100%" src="https://www.elle.vn/wp-content/uploads/2020/11/18/402138/phim-marvel-ra-mat-trong-2-nam-toi.jpg" alt="" />
-            <p>phút giây giải trí gắn kết gia đình
-            </p>
-            <button>đăng nhập</button>
-            <div>
-        <form>
-  <div className="mb-3">
-    <label  className="form-label">Email address</label>
-    <input type="emaail" className="form-control form-control-action" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
-    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div className="mb-3">
-    <label  className="form-label">Password</label>
-    <input type="password" className="form-control" id="exampleInputPassword1"></input>
-  </div>
-  <button type="submit" className="btn btn-primary">Submit</button>
-</form>
+  const handleClick = () => {
+    setShowForm(!showForm);
+  };
+
+  const nopClick = () => {};
+
+  return (
+    <div id="home">
+      <img
+        id="home-bg"
+        width="10%"
+        height="10%"
+        src="https://png.pngtree.com/png-vector/20220723/ourlarge/pngtree-cat-gold-logo-png-image_6034268.png"
+        alt=""
+      />
+
+      <button
+        onClick={handleClick}
+        className="btn btn-primary btn-block btn-color-red"
+        id="btn-dn"
+      >
+        đăng nhập
+      </button>
+      {showForm && (
+        <div id="form-dn">
+          <form>
+            <div className="mb-3" id="f">
+              <label className="form-label">Email address</label>
+              <input
+                type="emaail"
+                className="form-control form-control-action"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              ></input>
+              {/* <div id="emailHelp" className="form-text">
+                We'll never share your email with anyone else.
+              </div> */}
+            </div>
+            <div className="mb-3">
+              <label className="form-label">Password</label>
+              <input
+                type="password"
+                className="form-control"
+                id="exampleInputPassword1"
+              ></input>
+            </div>
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
+          </form>
         </div>
-       </div>
-    )
-}
+      )}
+      <div id="bd">
+        <p>phút giây giải trí gắn kết gia đình</p>
+        <p>Đăng nhập để có những phút giây giải trí </p>
+      </div>
+    </div>
+  );
+};
 
- export default home
+export default Home;

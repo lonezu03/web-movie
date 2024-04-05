@@ -7,13 +7,16 @@ import TrangChu from './component/trangchinh.tsx'
 import Phim from'./component/phim.tsx'
 import { Link, Route, Routes } from 'react-router-dom'
 import Home from './component/home.tsx' 
+import Xemphim from './component/xemphim.tsx'
 
 function App() {
 
 
  return <div>
-<Link to="/dk">Đăng nhập</Link>
+
     <Routes>
+    <Route path='/xemphim' element={<Xemphim/>}/>
+
     <Route path='/trangchu' element={<TrangChu/>}/>
     <Route path='/dk' element={<From/>}/>
     <Route path='/' element={<Home/>}/>

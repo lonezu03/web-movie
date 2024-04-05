@@ -1,0 +1,6 @@
+import { NavLink } from "react-router-dom";
+
+<NavLink to="/about" activeClassName="selected">About</NavLink>
+
+
+<NavLink exact activeStyle={{ backgroundColor: 'white', color: 'red' }} to="/" className="my-link">Trang Chu</NavLink>
