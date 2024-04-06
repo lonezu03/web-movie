@@ -6,7 +6,13 @@ body {
 #app {
   z-index: -1;
 }
-#app #home {
+#app #home-tong {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, transparent, black);
+}
+#app #home-tong #home {
   position: relative;
   width: 1200px;
   height: 800px;
@@ -17,12 +23,12 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#app #home #btn-dn {
+#app #home-tong #home #btn-dn {
   position: absolute;
   top: 0;
   right: 10%;
 }
-#app #home #form-dn form {
+#app #home-tong #home #form-dn form {
   color: whitesmoke;
   position: fixed; /* Đặt form cố định so với viewport */
   top: 50%; /* Đặt form ở giữa theo chiều dọc */
@@ -30,7 +36,7 @@ body {
   transform: translate(-50%, -50%); /* Dịch chuyển form để nó chính xác ở giữa */
   z-index: 5;
 }
-#app #home #bd {
+#app #home-tong #home #bd {
   display: block;
   position: relative;
   width: 100%;
@@ -38,7 +44,7 @@ body {
   background-size: cover;
   background-image: linear-gradient(to bottom, transparent, black);
 }
-#app #home #bd p {
+#app #home-tong #home #bd p {
   text-align: center;
   position: relative;
   top: 30%;
@@ -46,4 +52,68 @@ body {
   color: white;
   font-weight: 700;
   font-size: 40px;
+}
+#app #home-tong #ads1 {
+  color: aliceblue;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  font-weight: 800;
+}
+#app #home-tong #ads1 h1 {
+  position: absolute;
+  top: 30%;
+  left: 8%;
+  font-weight: 900;
+  width: 400px;
+}
+#app #home-tong #ads1 p {
+  position: absolute;
+  top: 55%;
+  left: 8%;
+  font-weight: 600;
+  width: 400px;
+}
+#app #home-tong #ads1 img {
+  position: absolute;
+  background-color: transparent;
+  right: 0;
+  z-index: 2;
+}
+#app #home-tong #ads1 video {
+  position: absolute;
+  right: 4%;
+  top: 19%;
+  width: 560px;
+  z-index: 1;
+}
+#app #home-tong #ads2 {
+  color: aliceblue;
+  width: 100%;
+  height: 1000px;
+  position: relative;
+  font-weight: 800;
+}
+#app #home-tong #ads2 h1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  font-weight: 900;
+  top: 15%;
+}
+#app #home-tong #ads2 p {
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  font-size: xx-large;
+  top: 25%;
+}
+#app #home-tong #ads2 img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=App.css.map */

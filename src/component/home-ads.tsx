@@ -2,7 +2,7 @@ import React from "react";
 const ads=() =>{
 
     return(
-        <div>
+        <div id="ads1">
             <h1>
                 Thưởng thức trên TV của bạn
                  

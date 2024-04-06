@@ -2,7 +2,7 @@ import React from "react";
 const ads=() =>{
 
     return(
-        <div>
+        <div id="ads2">
             <h1>
                 Tải xuống nội dung để xem ngoại tuyến               
             </h1>

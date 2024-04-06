@@ -5,7 +5,7 @@ import Homeads2 from "./Home-ads2";
 const ads=() =>{
 
     return(
-        <div>
+        <div id="home-tong">
             
             <Home/>
             <Homeads/>
