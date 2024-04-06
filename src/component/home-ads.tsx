@@ -4,7 +4,9 @@ const ads=() =>{
 
     return(
         <div>
-            
+            <h1>
+                Thưởng thức trên TV của bạn 
+            </h1>
         </div>
 
     )}
