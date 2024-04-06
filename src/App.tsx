@@ -12,7 +12,7 @@ import Xemphim from './component/xemphim.tsx'
 function App() {
 
 
- return <div>
+ return <div id='app'>
 
     <Routes>
     <Route path='/xemphim' element={<Xemphim/>}/>

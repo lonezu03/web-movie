@@ -1,5 +1,5 @@
 import React from "react";
-import Comment from './coment'
+//import Comment from './coment'
 const xemphim = () => {
   return (
     <div>
@@ -74,7 +74,7 @@ const xemphim = () => {
           allowFullScreen
         ></iframe>{" "}
       </div>
-      <Comment/>
+      {/* <Comment/> */}
     </div>
   );
 };
