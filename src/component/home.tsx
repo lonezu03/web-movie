@@ -1,16 +1,37 @@
 import React, { useState } from "react";
+
 import Home1 from './home-ads.tsx'
+
+import { NavLink, Route, Routes } from "react-router-dom";
+import TrangChu from './trangchinh.tsx'
+
+
+
 const Home = () => {
+  let user='';
+  let pass='';
   const [showForm, setShowForm] = useState<boolean>(false);
 
   const handleClick = () => {
     setShowForm(!showForm);
   };
 
-  const nopClick = () => {};
 
+  const manguser = [
+    { id: 'vu', pass: '1' },
+    { id: 'dat', pass: '1' },
+    { id: 'thay', pass: '1' },
+    //...
+  ];
+  
+  const nopClick = () => {};
+    
   return (
+
     <div id="home">
+       <Routes>
+    <Route path='/trangchu' element={<TrangChu/>}/>
+</Routes> 
       <img
         id="home-bg"
         width="10%"
@@ -31,7 +52,9 @@ const Home = () => {
           <form>
             <div className="mb-3" id="f">
               <label className="form-label">Email address</label>
-              <input
+              <input onChange={(e)=>{
+                  user=e.target.value;
+                 }}
                 type="emaail"
                 className="form-control form-control-action"
                 id="exampleInputEmail1"
@@ -47,11 +70,33 @@ const Home = () => {
                 type="password"
                 className="form-control"
                 id="exampleInputPassword1"
+                 onChange={(e)=>{
+                  pass=e.target.value;
+                 }}
               ></input>
             </div>
-            <button type="submit" className="btn btn-primary">
-              Submit
-            </button>
+            
+            <NavLink
+  to="/Trangchu"
+  className={({ isActive }) => (isActive ? "active" : "")}
+  onClick={(event) => {
+    if (user) {
+      for(let a of manguser) {
+        if(a.id === user && a.pass === pass) {
+          // Nếu thông tin đăng nhập đúng, cho phép chuyển hướng
+          return;
+        }
+      }
+    }
+    // Nếu thông tin đăng nhập sai, ngăn chặn chuyển hướng và hiển thị thông báo lỗi
+    event.preventDefault();
+    alert("Thông tin đăng nhập không chính xác. Vui lòng thử lại.");
+  }}
+>
+  Đăng nhập
+</NavLink>
+
+
           </form>
         </div>
       )}
