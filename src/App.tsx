@@ -6,14 +6,12 @@ import From from './component/from.tsx'
 import TrangChu from './component/trangchinh.tsx'
 import Phim from'./component/phim.tsx'
 import { Link, Route, Routes } from 'react-router-dom'
-import Home from './component/home.tsx' 
+import Home from './component/hometong.tsx' 
 import Xemphim from './component/xemphim.tsx'
-
 function App() {
 
 
  return <div id='app'>
-
     <Routes>
     <Route path='/xemphim' element={<Xemphim/>}/>
 

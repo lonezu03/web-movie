@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Home1 from './home-ads.tsx'
 const Home = () => {
   const [showForm, setShowForm] = useState<boolean>(false);
 
