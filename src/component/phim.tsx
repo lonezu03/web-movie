@@ -1,5 +1,4 @@
-import React from "react"
-import { NavLink, Route, Routes,Link } from "react-router-dom";
+import { Route, Routes,Link } from "react-router-dom";
 import Xemphim from "./xemphim";
 
 const phim=()=>{

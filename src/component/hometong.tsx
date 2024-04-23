@@ -1,4 +1,3 @@
-import React from "react";
 import Home from "./home";
 import Homeads from "./home-ads"
 import Homeads2 from "./Home-ads2";

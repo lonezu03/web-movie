@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import /*React,*/ { useState } from "react";
 
-import Home1 from './home-ads.tsx'
+//import Home1 from './home-ads.tsx'
 
 import { NavLink, Route, Routes } from "react-router-dom";
 import TrangChu from './trangchinh.tsx'
@@ -24,7 +24,7 @@ const Home = () => {
     //...
   ];
   
-  const nopClick = () => {};
+ // const nopClick = () => {};
     
   return (
 
@@ -81,7 +81,7 @@ const Home = () => {
   className={({ isActive }) => (isActive ? "active" : "")}
   onClick={(event) => {
     if (user) {
-      for(let a of manguser) {
+      for(const a of manguser) {
         if(a.id === user && a.pass === pass) {
           // Nếu thông tin đăng nhập đúng, cho phép chuyển hướng
           return;

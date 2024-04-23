@@ -1,5 +1,4 @@
-import React from "react";
-//import Comment from './coment'
+
 const xemphim = () => {
   return (
     <div>
