@@ -1,5 +1,27 @@
+import { useParams } from "react-router-dom";
 
-const xemphim = () => {
+const Xemphim = () => {
+  const dsphim = [
+    {
+      id: 1,
+      name: "ten phim ne",
+      link_img: "1",
+      link: "https://www.youtube.com/embed/782fEo5G3v8",
+    },
+    {
+      id: 2,
+      name: "ten phim ne",
+      link_img: "1",
+      link: "https://www.youtube.com/embed/5FCcXCchXDk",
+    },
+    { id: 3, name: "ten phim ne", link_img: "1", link: "1" },
+    { id: 4, name: "ten phim ne", link_img: "1", link: "1" },
+    { id: 5, name: "ten phim ne", link_img: "1", link: "1" },
+    { id: 6, name: "ten phim ne", link_img: "1", link: "1" },
+    //...
+  ];
+  const { id } = useParams();
+  console.log(dsphim[id - 1]);
   return (
     <div>
       <h1>title phim</h1>
@@ -65,7 +87,7 @@ const xemphim = () => {
         <iframe
           width="835"
           height="462"
-          src="https://www.youtube.com/embed/782fEo5G3v8"
+          src={dsphim[id - 1].link}
           title="Tiêu Dao - Hoắc Kiến Hoa Vietsub"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -78,4 +100,4 @@ const xemphim = () => {
   );
 };
 
-export default xemphim;
+export default Xemphim;

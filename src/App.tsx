@@ -13,7 +13,7 @@ function App() {
     <div id="app">
       <Routes>
         <Route path="/xemphim" element={<Xemphim />} />
-
+          <Route path="/xemphim/:id" element={<Xemphim />} />
         <Route path="/trangchu" element={<TrangChu />} />
         <Route path="/dk" element={<From />} />
         <Route path="/" element={<Home />} />
