@@ -14,8 +14,18 @@ const Xemphim = () => {
       link_img: "1",
       link: "https://www.youtube.com/embed/5FCcXCchXDk",
     },
-    { id: 3, name: "ten phim ne", link_img: "1", link: "1" },
-    { id: 4, name: "ten phim ne", link_img: "1", link: "1" },
+    {
+      id: 3,
+      name: "Phong Thần tam bộ khúc",
+      link_img: "1",
+      link: "https://www.youtube.com/embed/kDRpjqrJNnQ",
+    },
+    {
+      id: 4,
+      name: "Lật mặt 7: Một điều ước",
+      link_img: "1",
+      link: "https://www.youtube.com/embed/d1ZHdosjNX8",
+    },
     { id: 5, name: "ten phim ne", link_img: "1", link: "1" },
     { id: 6, name: "ten phim ne", link_img: "1", link: "1" },
     //...
