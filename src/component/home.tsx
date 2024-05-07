@@ -4,6 +4,7 @@ import /*React,*/ { useState } from "react";
 
 import { NavLink, Route, Routes } from "react-router-dom";
 import TrangChu from './trangchinh.tsx'
+import MenuH from "./menuH"
 
 
 
@@ -32,14 +33,8 @@ const Home = () => {
        <Routes>
     <Route path='/trangchu' element={<TrangChu/>}/>
 </Routes> 
-      <img
-        id="home-bg"
-        width="10%"
-        height="10%"
-        src="https://png.pngtree.com/png-vector/20220723/ourlarge/pngtree-cat-gold-logo-png-image_6034268.png"
-        alt=""
-      />
-
+      
+      <MenuH/>
       <button
         onClick={handleClick}
         className="btn btn-primary btn-block btn-color-red"
@@ -74,9 +69,10 @@ const Home = () => {
                   pass=e.target.value;
                  }}
               ></input>
+              <button id="btnCancle" onClick={handleClick}>Cancle</button>
             </div>
             
-            <NavLink
+            <NavLink id="dangnhap"
   to="/Trangchu"
   className={({ isActive }) => (isActive ? "active" : "")}
   onClick={(event) => {

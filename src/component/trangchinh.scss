@@ -1,0 +1,62 @@
+.column1 {
+  height: fit-content;
+  width: 70%;
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  
+  .column2 {
+    border: 3px solid rgb(97, 79, 79);
+    border-radius: 20px;
+    background-color: aliceblue;
+    width: 200px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 50% 25% 25%;
+    
+    h3 {
+      margin-top: 10px;
+      text-align: center;
+    }
+    span {
+      margin-right: 10px;
+      text-align: end;
+      font-size: larger;
+      text-decoration: none;
+    }
+  }
+  #link{
+    color:white;
+    text-decoration: none;
+    position: relative;
+    #title{
+      position: absolute;
+      bottom: -15%;
+
+    }
+  }
+}
+.trangchu{
+.menuall{
+  position: relative;
+  &::before {
+    position: absolute;
+    
+    display: block;
+    content: "";
+   
+    backdrop-filter: blur(20px);
+    z-index: -1;
+  }
+  .search-container{
+    position: absolute;
+    right: 30px;
+    top:50px;
+  }
+}}

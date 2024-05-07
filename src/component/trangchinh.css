@@ -1,0 +1,59 @@
+.column1 {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 70%;
+  margin: auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+.column1 .column2 {
+  border: 3px solid rgb(97, 79, 79);
+  border-radius: 20px;
+  background-color: aliceblue;
+  width: 200px;
+  height: 300px;
+  display: grid;
+  grid-template-rows: 50% 25% 25%;
+}
+.column1 .column2 h3 {
+  margin-top: 10px;
+  text-align: center;
+}
+.column1 .column2 span {
+  margin-right: 10px;
+  text-align: end;
+  font-size: larger;
+  text-decoration: none;
+}
+.column1 #link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+.column1 #link #title {
+  position: absolute;
+  bottom: -15%;
+}
+
+.trangchu .menuall {
+  position: relative;
+}
+.trangchu .menuall::before {
+  position: absolute;
+  display: block;
+  content: "";
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  z-index: -1;
+}
+.trangchu .menuall .search-container {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+}/*# sourceMappingURL=trangchinh.css.map */

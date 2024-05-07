@@ -1,20 +1,27 @@
 @charset "UTF-8";
 body {
-  width: min(1400px, 100%);
+  width: min(1500px, 100%);
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  align-items: center;
+  text-align: center;
+  color: white;
 }
-
-#app {
+body #app {
+  width: 100%;
   z-index: -1;
 }
-#app #home-tong {
+body #app #home-tong {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-image: linear-gradient(to bottom, transparent, black);
 }
-#app #home-tong #home {
+body #app #home-tong #home {
   position: relative;
-  width: 1200px;
+  width: 1500px;
   height: 800px;
   background-image: url("https://cafebiz.cafebizcdn.vn/thumb_w/600/162123310254002176/2022/2/3/photo1643861468728-1643861468806281325325.png");
   background-size: cover;
@@ -23,20 +30,53 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#app #home-tong #home #btn-dn {
+body #app #home-tong #home #btn-dn {
   position: absolute;
-  top: 0;
+  top: 6%;
   right: 10%;
 }
-#app #home-tong #home #form-dn form {
+body #app #home-tong #home #form-dn form {
+  z-index: 10;
   color: whitesmoke;
   position: fixed; /* Đặt form cố định so với viewport */
   top: 50%; /* Đặt form ở giữa theo chiều dọc */
   left: 50%; /* Đặt form ở giữa theo chiều ngang */
   transform: translate(-50%, -50%); /* Dịch chuyển form để nó chính xác ở giữa */
-  z-index: 5;
 }
-#app #home-tong #home #bd {
+body #app #home-tong #home #form-dn form::before {
+  position: absolute;
+  width: 1500px;
+  height: 1500px;
+  display: block;
+  content: "";
+  top: -750px;
+  left: -750px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  z-index: -1;
+}
+body #app #home-tong #home #form-dn #btnCancle {
+  position: absolute;
+  right: 0%;
+  color: white;
+  margin: 5px;
+}
+body #app #home-tong #home #form-dn #dangnhap {
+  color: white;
+  background-color: blur;
+  margin: 0px;
+  padding: 8px;
+  height: 100%;
+  border: 3px solid;
+  border-image-source: linear-gradient(red, blue);
+  border-image-slice: 1;
+  border-radius: 8px;
+  text-decoration: none;
+}
+body #app #home-tong #home #form-dn #dangnhap:hover {
+  background-color: rgb(16, 5, 169);
+}
+body #app #home-tong #home #bd {
   display: block;
   position: relative;
   width: 100%;
@@ -44,7 +84,7 @@ body {
   background-size: cover;
   background-image: linear-gradient(to bottom, transparent, black);
 }
-#app #home-tong #home #bd p {
+body #app #home-tong #home #bd p {
   text-align: center;
   position: relative;
   top: 30%;
@@ -53,48 +93,48 @@ body {
   font-weight: 700;
   font-size: 40px;
 }
-#app #home-tong #ads1 {
+body #app #home-tong #ads1 {
   color: aliceblue;
   width: 100%;
   height: 600px;
   position: relative;
   font-weight: 800;
 }
-#app #home-tong #ads1 h1 {
+body #app #home-tong #ads1 h1 {
   position: absolute;
   top: 30%;
   left: 8%;
   font-weight: 900;
   width: 400px;
 }
-#app #home-tong #ads1 p {
+body #app #home-tong #ads1 p {
   position: absolute;
   top: 55%;
   left: 8%;
   font-weight: 600;
   width: 400px;
 }
-#app #home-tong #ads1 img {
+body #app #home-tong #ads1 img {
   position: absolute;
   background-color: transparent;
   right: 0;
   z-index: 2;
 }
-#app #home-tong #ads1 video {
+body #app #home-tong #ads1 video {
   position: absolute;
   right: 4%;
   top: 19%;
   width: 560px;
   z-index: 1;
 }
-#app #home-tong #ads2 {
+body #app #home-tong #ads2 {
   color: aliceblue;
   width: 100%;
   height: 1000px;
   position: relative;
   font-weight: 800;
 }
-#app #home-tong #ads2 h1 {
+body #app #home-tong #ads2 h1 {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -103,7 +143,7 @@ body {
   font-weight: 900;
   top: 15%;
 }
-#app #home-tong #ads2 p {
+body #app #home-tong #ads2 p {
   position: absolute;
   text-align: center;
   justify-content: center;
@@ -113,7 +153,43 @@ body {
   font-size: xx-large;
   top: 25%;
 }
-#app #home-tong #ads2 img {
+body #app #home-tong #ads2 img {
   width: 100%;
   height: 100%;
+}
+body .trangchu {
+  align-items: center;
+  width: min(1500px, 100%);
+  background-color: rgb(0, 0, 0);
+}
+body .trangchu .menuall {
+  position: relative;
+}
+body .trangchu .menuall .navbar-nav {
+  position: absolute;
+  right: 30%;
+  gap: 20px;
+}
+body .trangchu .menuall .search-container {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+body .trangchu .xemphim {
+  align-items: center;
+  width: 100%;
+  background-color: antiquewhite;
+}
+body .trangchu .xemphim .menuall {
+  position: relative;
+}
+body .trangchu .xemphim .menuall .navbar-nav {
+  position: absolute;
+  right: 30%;
+  gap: 20px;
+}
+body .trangchu .xemphim .menuall .search-container {
+  position: absolute;
+  right: 50px;
+  top: 50px;
 }/*# sourceMappingURL=App.css.map */
