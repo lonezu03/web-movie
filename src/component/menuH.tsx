@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function menuH  ()  {
     return(
-<div className="trangchu">
+<div className="menu">
 <div className="menuall">
 <nav className="navbar navbar-expand-lg navbar-light bg-light menu">
   <a className="navbar-brand" href="#">

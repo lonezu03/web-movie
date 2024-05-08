@@ -1,12 +1,9 @@
 @charset "UTF-8";
 body {
-  width: min(1500px, 100%);
+  width: 1850px;
   background-color: black;
   margin: 0;
   padding: 0;
-  align-items: center;
-  align-items: center;
-  text-align: center;
   color: white;
 }
 body #app {
@@ -21,12 +18,8 @@ body #app #home-tong {
 }
 body #app #home-tong #home {
   position: relative;
-  width: 1500px;
+  width: 100%;
   height: 800px;
-  background-image: url("https://cafebiz.cafebizcdn.vn/thumb_w/600/162123310254002176/2022/2/3/photo1643861468728-1643861468806281325325.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -84,6 +77,9 @@ body #app #home-tong #home #bd {
   background-size: cover;
   background-image: linear-gradient(to bottom, transparent, black);
 }
+body #app #home-tong #home #bd img {
+  width: 1850px;
+}
 body #app #home-tong #home #bd p {
   text-align: center;
   position: relative;
@@ -96,7 +92,7 @@ body #app #home-tong #home #bd p {
 body #app #home-tong #ads1 {
   color: aliceblue;
   width: 100%;
-  height: 600px;
+  height: 1000px;
   position: relative;
   font-weight: 800;
 }
@@ -159,36 +155,33 @@ body #app #home-tong #ads2 img {
 }
 body .trangchu {
   align-items: center;
-  width: min(1500px, 100%);
+  width: 100%;
   background-color: rgb(0, 0, 0);
 }
-body .trangchu .menuall {
-  position: relative;
+body .xemphim {
+  background-color: black;
 }
-body .trangchu .menuall .navbar-nav {
-  position: absolute;
-  right: 30%;
-  gap: 20px;
-}
-body .trangchu .menuall .search-container {
-  position: absolute;
-  right: 50px;
-  top: 50px;
-}
-body .trangchu .xemphim {
+body .menu {
   align-items: center;
-  width: 100%;
-  background-color: antiquewhite;
+  width: 1850px;
+  color: white;
+  background-color: rgb(207, 104, 104);
+  font-size: larger;
+  font-weight: 200px;
 }
-body .trangchu .xemphim .menuall {
+body .menu img {
+  width: 17%;
+  height: 17%;
+}
+body .menu .menuall {
   position: relative;
 }
-body .trangchu .xemphim .menuall .navbar-nav {
+body .menu .menuall .navbar-nav {
   position: absolute;
   right: 30%;
-  gap: 20px;
+  gap: 50px;
 }
-body .trangchu .xemphim .menuall .search-container {
+body .menu .menuall .search-container {
   position: absolute;
   right: 50px;
   top: 50px;

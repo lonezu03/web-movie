@@ -28,6 +28,7 @@ const Xemphim = () => {
     },
     { id: 5, name: "KUNG FU PANDA 4", link_img: "1", link: "https://www.youtube.com/embed/_inKs4eeHiI" },
     { id: 6, name: "Deadpool & Wolverine ", link_img: "1", link: "https://www.youtube.com/embed/WXLunaC5nWk" },
+    { id: 99, name: "Trường nguyệt tẫn minh", link_img: "1", link: "https://www.youtube.com/embed/WXLunaC5nWk" }
     //...
   ];
   const { id } = useParams();

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./trangchinh.css";
 import Menu from "./menu";
-
+import Phimnoibat from "./phimnoibat";
 const trangchinh = () => {
   const dsphim = [
     {
@@ -46,19 +46,13 @@ const trangchinh = () => {
   return (
     <div className="trangchu">
       {<Menu />}
-      <div id="noibat">
-        <h1>Phim nổi bật</h1>
-        <video width="320" height="240" autoPlay>
-          <source src="https://www.youtube.com/embed/WLEhociPWzA" type="video/mp4"/>
-           
-        </video>
-      </div>
+      {<Phimnoibat/>}
       <div className="column1" style={{}}>
         {dsphim.map((phim) => (
           <Link to={`/xemphim/${phim.id}`}  id="link">
             <div
               key={phim.id}
-              className="column2"
+              className="column15"
               // style={{
               //   backgroundImage: `url("${phim.link_img}")`,
               //   backgroundPosition: "center center",
@@ -66,10 +60,9 @@ const trangchinh = () => {
               //   backgroundSize: "cover",
               // }}
             >
-               <img
+               <img className="column2"
                 src={phim.link_img}
                 id="image"
-                className="thumbnail"
                 alt="Movie Thumbnail"
               />
               <h5 id="title">{phim.name}</h5>

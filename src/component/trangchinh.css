@@ -11,8 +11,14 @@
   display: flex;
   justify-content: center;
   align-items: left;
+  background-color: rgba(172, 154, 154, 0.476);
+  border: solid white 3px;
+  border-radius: 20px;
 }
-.column1 .column2 {
+.column1 .column15 {
+  height: 360px;
+}
+.column1 .column15 .column2 {
   border: 3px solid rgb(97, 79, 79);
   border-radius: 20px;
   background-color: aliceblue;
@@ -21,11 +27,11 @@
   display: grid;
   grid-template-rows: 50% 25% 25%;
 }
-.column1 .column2 h3 {
+.column1 .column15 .column2 h3 {
   margin-top: 10px;
   text-align: center;
 }
-.column1 .column2 span {
+.column1 .column15 .column2 span {
   margin-right: 10px;
   text-align: end;
   font-size: larger;
@@ -35,25 +41,8 @@
   color: white;
   text-decoration: none;
   position: relative;
+  text-align: center;
 }
 .column1 #link #title {
-  position: absolute;
-  bottom: -15%;
-}
-
-.trangchu .menuall {
-  position: relative;
-}
-.trangchu .menuall::before {
-  position: absolute;
-  display: block;
-  content: "";
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  z-index: -1;
-}
-.trangchu .menuall .search-container {
-  position: absolute;
-  right: 30px;
-  top: 50px;
+  width: 200px;
 }/*# sourceMappingURL=trangchinh.css.map */

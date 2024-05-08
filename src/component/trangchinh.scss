@@ -10,7 +10,12 @@
   display: flex;
   justify-content: center;
   align-items: left;
-  
+  background-color: rgba(172, 154, 154, 0.476);
+  border:solid white 3px;
+  border-radius: 20px ;
+  .column15{
+    height: 360px;
+
   .column2 {
     border: 3px solid rgb(97, 79, 79);
     border-radius: 20px;
@@ -30,33 +35,33 @@
       font-size: larger;
       text-decoration: none;
     }
-  }
+  }}
   #link{
     color:white;
     text-decoration: none;
     position: relative;
+    text-align: center;
     #title{
-      position: absolute;
-      bottom: -15%;
+      width: 200px;
 
     }
   }
 }
-.trangchu{
-.menuall{
-  position: relative;
-  &::before {
-    position: absolute;
+// .trangchu{
+// .menuall{
+//   position: relative;
+//   &::before {
+//     position: absolute;
     
-    display: block;
-    content: "";
+//     display: block;
+//     content: "";
    
-    backdrop-filter: blur(20px);
-    z-index: -1;
-  }
-  .search-container{
-    position: absolute;
-    right: 30px;
-    top:50px;
-  }
-}}
+//     backdrop-filter: blur(20px);
+//     z-index: -1;
+//   }
+//   .search-container{
+//     position: absolute;
+//     right: 30px;
+//     top:50px;
+//   }
+// }}
