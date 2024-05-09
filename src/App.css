@@ -9,12 +9,14 @@ body {
 body #app {
   width: 100%;
   z-index: -1;
+  align-items: center;
+  margin: auto;
 }
 body #app #home-tong {
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-image: linear-gradient(to bottom, transparent, black);
+  background-image: linear-gradient(to 80%, transparent, black);
 }
 body #app #home-tong #home {
   position: relative;
@@ -82,11 +84,12 @@ body #app #home-tong #home #bd img {
 }
 body #app #home-tong #home #bd p {
   text-align: center;
-  position: relative;
+  position: absolute;
   top: 30%;
   margin-bottom: 8%;
   color: white;
   font-weight: 700;
+  gap: 60px;
   font-size: 40px;
 }
 body #app #home-tong #ads1 {
@@ -185,4 +188,31 @@ body .menu .menuall .search-container {
   position: absolute;
   right: 50px;
   top: 50px;
+}
+body .menu .phimnoibat {
+  color: antiquewhite;
+}
+body .menu .phimnoibat h1 {
+  color: antiquewhite;
+}
+body .menu .phimnoibat #noibat {
+  position: relative;
+  z-index: 5;
+}
+body .menu .phimnoibat #noibat::before {
+  top: 0;
+  left: 0;
+  width: 1800px;
+  height: 1000px;
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(to 80%, transparent, black);
+  z-index: 6;
+}
+body .menu .phimnoibat #noibat #link {
+  text-decoration: none;
+  color: antiquewhite;
+}
+body .menu .phimnoibat #noibat #link p {
+  color: antiquewhite;
 }/*# sourceMappingURL=App.css.map */
