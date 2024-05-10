@@ -16,7 +16,7 @@ const phimnoibat = () => {
         <div>
         <div id="noibat">
         <h1>Phim nổi bật</h1>
-        <video width="1850px" height="" autoPlay  muted loop>
+        <video width="1500px" height="" autoPlay  muted loop>
           <source src="https://trailer.vieon.vn/Teaser_TruongNguyetTanMinhv3.mp4" type="video/mp4"/>
            
         </video>

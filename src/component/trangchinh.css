@@ -1,7 +1,7 @@
 .column1 {
   height: -moz-fit-content;
   height: fit-content;
-  width: 70%;
+  width: 80%;
   margin: auto;
   padding-top: 20px;
   display: flex;
@@ -16,14 +16,14 @@
   border-radius: 20px;
 }
 .column1 .column15 {
-  height: 360px;
+  height: 510px;
 }
 .column1 .column15 .column2 {
   border: 3px solid rgb(97, 79, 79);
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: aliceblue;
-  width: 200px;
-  height: 300px;
+  width: 300px;
+  height: 450px;
   display: grid;
   grid-template-rows: 50% 25% 25%;
 }
@@ -41,8 +41,10 @@
   color: white;
   text-decoration: none;
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 .column1 #link #title {
   width: 200px;
+  font-size: 20px;
+  padding-top: 30px;
 }/*# sourceMappingURL=trangchinh.css.map */

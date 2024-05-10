@@ -1,6 +1,6 @@
 body {
   //width: min(1500px, 100%);
-  width: 1850px;
+  width: 1500px;
   background-color: black;
   margin: 0;
   padding: 0;
@@ -88,7 +88,7 @@ body {
         background-size: cover;
         background-image: linear-gradient(to bottom, transparent, black);
         img{
-          width: 1850px;
+          width: 1500px;
         }
         p {
           text-align: center;
@@ -184,7 +184,7 @@ body {
 
 .menu{
   align-items: center;
-  width: 1850px;
+  width: 1500px;
   color: white;
   background-color: rgb(207, 104, 104);
   font-size: larger;

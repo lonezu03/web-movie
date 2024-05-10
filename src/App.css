@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  width: 1850px;
+  width: 1500px;
   background-color: black;
   margin: 0;
   padding: 0;
@@ -80,7 +80,7 @@ body #app #home-tong #home #bd {
   background-image: linear-gradient(to bottom, transparent, black);
 }
 body #app #home-tong #home #bd img {
-  width: 1850px;
+  width: 1500px;
 }
 body #app #home-tong #home #bd p {
   text-align: center;
@@ -166,7 +166,7 @@ body .xemphim {
 }
 body .menu {
   align-items: center;
-  width: 1850px;
+  width: 1500px;
   color: white;
   background-color: rgb(207, 104, 104);
   font-size: larger;

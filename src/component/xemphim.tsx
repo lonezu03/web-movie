@@ -1,5 +1,6 @@
-import { useLocation  } from "react-router-dom";
-import Menu from "./menu"
+import { useLocation } from "react-router-dom";
+import Menu from "./menu";
+import Gioithieuphim from "./gioithieuphim";
 const Xemphim = () => {
   const location = useLocation(); // Lấy data được truyền qua state
   const phim = location.state?.phim;
@@ -7,7 +8,8 @@ const Xemphim = () => {
 
   return (
     <div className="xemphim">
-      <Menu/>
+      <Gioithieuphim myProp={phim} />
+      <Menu />
       <div className="d-flex justify-content-center">
         <iframe
           width="835"
