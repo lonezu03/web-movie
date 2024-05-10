@@ -5,11 +5,11 @@ const Xemphim = () => {
   const location = useLocation(); // Lấy data được truyền qua state
   const phim = location.state?.phim;
   console.log(phim.id);
-
+  
   return (
     <div className="xemphim">
-      <Gioithieuphim myProp={phim} />
       <Menu />
+      <Gioithieuphim data={phim.name} />
       <div className="d-flex justify-content-center">
         <iframe
           width="835"

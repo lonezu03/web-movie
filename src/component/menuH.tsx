@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 function menuH  ()  {
     return(
-<div className="menu">
+<div className="menuH">
 <div className="menuall">
 <nav className="navbar navbar-expand-lg navbar-light bg-light menu">
   <a className="navbar-brand" href="#">
     <img
       width="17%"
       style={{ height: "17%" }}
-      src="https://png.pngtree.com/png-vector/20220723/ourlarge/pngtree-cat-gold-logo-png-image_6034268.png"
+      src="https://movie-detail-drab.vercel.app/assets/images/logo.svg"
       alt=""
     />
   </a>

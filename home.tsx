@@ -94,7 +94,8 @@ const Home = () => {
         </div>
       )}
       <div id="bd">
-        <p>phút giây giải trí gắn kết gia đình</p>
+
+        <p>phút giây giải trí gắn kết gia đình đăng nhập để có những phút giây giải trí</p>
       </div>
     </div>
   );

@@ -6,8 +6,8 @@ const menu = () => {
       <div className="menuall">
         <nav className="navbar navbar-expand color-white   menu">
           <a className="navbar-brand" href="#">
-            <img
-              src="https://png.pngtree.com/png-vector/20220723/ourlarge/pngtree-cat-gold-logo-png-image_6034268.png"
+            <img id="logo"
+              src="https://movie-detail-drab.vercel.app/assets/images/logo.svg"
               alt=""
             />
           </a>
@@ -47,7 +47,7 @@ const menu = () => {
             </ul>
           </div>
         </nav>
-        <div className="search-container ">
+        {/* <div className="search-container ">
           <form role="search" id="form">
             <input
               type="search"
@@ -56,7 +56,7 @@ const menu = () => {
               placeholder="Search.."
             ></input>
           </form>
-        </div>
+        </div> */}
       </div>
     </div>
   );

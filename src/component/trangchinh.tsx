@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./trangchinh.css";
 import Menu from "./menu";
 import Phimnoibat from "./phimnoibat";
+import Footer from "./footer";
 const trangchinh = () => {
   const dsphim = [
     {
@@ -75,6 +76,8 @@ const trangchinh = () => {
           </Link>
         ))}
       </div>
+        <Footer/>
+
     </div>
   );
 };
