@@ -13,20 +13,26 @@ body #app {
 }
 body #app #home-tong {
   width: 100%;
-  height: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   background-size: cover;
 }
 body #app #home-tong #home {
   position: relative;
   width: 100%;
   height: 800px;
+  background-color: black;
   -o-object-fit: cover;
      object-fit: cover;
 }
 body #app #home-tong #home #btn-dn {
   position: absolute;
-  top: 6%;
+  top: 13px;
   right: 10%;
+  z-index: 6;
+  background-image: linear-gradient(to right, red, blue);
+  border: solid yellow 4px;
+  border-radius: 8px;
 }
 body #app #home-tong #home #form-dn form {
   z-index: 10;
@@ -163,56 +169,6 @@ body .trangchu {
 body .xemphim {
   background-color: black;
 }
-body .menu {
-  align-items: center;
-  width: 1500px;
-  color: white;
-  background-color: rgb(125, 207, 104);
-  font-size: larger;
-  font-weight: 200px;
-}
-body .menu img {
-  width: 17%;
-  height: 17%;
-}
-body .menu .menuall {
-  position: relative;
-}
-body .menu .menuall .navbar-nav {
-  position: absolute;
-  right: 30%;
-  gap: 50px;
-}
-body .menu .menuall .search-container {
-  position: absolute;
-  right: 50px;
-  top: 50px;
-}
-body .menuH {
-  align-items: center;
-  width: 1500px;
-  color: white;
-  background-color: rgb(125, 207, 104);
-  font-size: larger;
-  font-weight: 200px;
-}
-body .menuH img {
-  width: 17%;
-  height: 17%;
-}
-body .menuH .menuall {
-  position: relative;
-}
-body .menuH .menuall .navbar-nav {
-  position: absolute;
-  right: 30%;
-  gap: 50px;
-}
-body .menuH .menuall .search-container {
-  position: absolute;
-  right: 50px;
-  top: 50px;
-}
 body .footer {
   display: flex;
 }
@@ -224,7 +180,7 @@ body .phimnoibat h1 {
 }
 body .phimnoibat #noibat {
   position: relative;
-  z-index: 5;
+  z-index: 2;
 }
 body .phimnoibat #noibat::before {
   top: 0;
@@ -242,4 +198,34 @@ body .phimnoibat #noibat #link {
 }
 body .phimnoibat #noibat #link p {
   color: antiquewhite;
+}
+
+.menu {
+  align-items: center;
+  width: 1500px;
+  color: white;
+  background-color: rgb(125, 207, 104);
+  font-size: larger;
+  font-weight: 200px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.menu img {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+.menu .menuall {
+  position: relative;
+}
+.menu .menuall .navbar-nav {
+  position: absolute;
+  right: 30%;
+  gap: 50px;
+}
+.menu .menuall .search-container {
+  position: absolute;
+  right: 50px;
+  top: 50px;
 }/*# sourceMappingURL=App.css.map */

@@ -5,23 +5,31 @@ import /*React,*/ { useState } from "react";
 import { NavLink, Route, Routes } from "react-router-dom";
 import TrangChu from './trangchinh.tsx'
 import MenuH from "./menuH"
-
+// Trong tệp my-global.d.ts
+declare global {
+  interface Window {
+  //  id: number;
+    tenTK: "vui lòng đăng nhập";
+  //  pass: string;
+    loai: string;
+  }
+}
 
 
 const Home = () => {
   let user='';
   let pass='';
   const [showForm, setShowForm] = useState<boolean>(false);
-
+  
   const handleClick = () => {
     setShowForm(!showForm);
   };
 
 
   const manguser = [
-    { id: 'vu', pass: '1' },
-    { id: 'dat', pass: '1' },
-    { id: 'thay', pass: '1' },
+    { id:0,tenTK: 'vu', pass: '1' ,loai:"admin"},
+    { id:1,tenTK: 'dat', pass: '1',loai:"admin" },
+    { id:2,tenTK: 'thay', pass: '1' ,loai:"user"},
     //...
   ];
   
@@ -37,7 +45,7 @@ const Home = () => {
       <MenuH/>
       <button
         onClick={handleClick}
-        className="btn btn-primary btn-block btn-color-red"
+        className="dn"
         id="btn-dn"
       >
         đăng nhập
@@ -73,13 +81,15 @@ const Home = () => {
             </div>
             
             <NavLink id="dangnhap"
-  to="/Trangchu"
+  to="/Trangchu" 
   className={({ isActive }) => (isActive ? "active" : "")}
   onClick={(event) => {
     if (user) {
-      for(const a of manguser) {
-        if(a.id === user && a.pass === pass) {
+      for(let i=0;i<manguser.length;i++) {
+        if(manguser[i].tenTK === user && manguser[i].pass === pass) {
           // Nếu thông tin đăng nhập đúng, cho phép chuyển hướng
+          window.loai=manguser[i].tenTK;
+          window.loai=manguser[i].loai;
           return;
         }
       }
@@ -87,7 +97,7 @@ const Home = () => {
     // Nếu thông tin đăng nhập sai, ngăn chặn chuyển hướng và hiển thị thông báo lỗi
     event.preventDefault();
     alert("Thông tin đăng nhập không chính xác. Vui lòng thử lại.");
-  }}
+  }} 
 >
   Đăng nhập
 </NavLink>

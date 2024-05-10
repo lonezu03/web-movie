@@ -5,12 +5,12 @@ const menu = () => {
     <div className="menu">
       <div className="menuall">
         <nav className="navbar navbar-expand color-white   menu">
-          <a className="navbar-brand" href="#">
+          <Link to={"/trangchu"}>
             <img id="logo"
               src="https://movie-detail-drab.vercel.app/assets/images/logo.svg"
               alt=""
             />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -46,7 +46,10 @@ const menu = () => {
               </li>
             </ul>
           </div>
+
         </nav>
+
+        <div><p>user: {window.tenTK}</p></div>
         {/* <div className="search-container ">
           <form role="search" id="form">
             <input

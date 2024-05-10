@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function menuH  ()  {
     return(
-<div className="menuH">
+<div className="menu">
 <div className="menuall">
-<nav className="navbar navbar-expand-lg navbar-light bg-light menu">
+<nav className="navbar navbar-expand-lg navbar-light  menu">
   <a className="navbar-brand" href="#">
     <img
       width="17%"

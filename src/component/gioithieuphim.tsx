@@ -1,7 +1,9 @@
 function gioithieuphim (props) {
-  const {id,name,link_img,link,mota  } = props;
-  const {phim}=props
-  //alert(id+link);
+  //const {id,name,link_img,mota } = props;
+  const phim=props.data
+  
+  console.log (props.data)
+  console.log(phim)
   return (
     <div className="gioithieuphim">
       <div>

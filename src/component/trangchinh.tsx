@@ -1,9 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 import "./trangchinh.css";
 import Menu from "./menu";
 import Phimnoibat from "./phimnoibat";
 import Footer from "./footer";
 const trangchinh = () => {
+ // const location = useLocation(); // Lấy data được truyền qua state
+ // const user = location.state?.loai;
+  
   const dsphim = [
     {
       id: 1,
