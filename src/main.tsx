@@ -4,7 +4,7 @@ import App from "./App.tsx";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { } from "react-router-dom";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+//import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 

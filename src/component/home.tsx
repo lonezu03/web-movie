@@ -9,7 +9,7 @@ import MenuH from "./menuH"
 declare global {
   interface Window {
   //  id: number;
-    tenTK: "vui lòng đăng nhập";
+    tenTK: string;
   //  pass: string;
     loai: string;
   }
@@ -88,7 +88,7 @@ const Home = () => {
       for(let i=0;i<manguser.length;i++) {
         if(manguser[i].tenTK === user && manguser[i].pass === pass) {
           // Nếu thông tin đăng nhập đúng, cho phép chuyển hướng
-          window.loai=manguser[i].tenTK;
+          window.tenTK=manguser[i].tenTK;
           window.loai=manguser[i].loai;
           return;
         }
@@ -109,7 +109,9 @@ const Home = () => {
       <div id="bd">
         <img src="https://cafebiz.cafebizcdn.vn/thumb_w/600/162123310254002176/2022/2/3/photo1643861468728-1643861468806281325325.png" alt="" />
         <p>phút giây giải trí gắn kết gia đình</p>
-        <p>Đăng nhập để có những phút giây giải trí </p>
+        <p style={{
+          top:'40%'
+        }}>Đăng nhập để có những phút giây giải trí </p>
       </div>
     </div>
   );

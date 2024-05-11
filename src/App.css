@@ -44,8 +44,8 @@ body #app #home-tong #home #form-dn form {
 }
 body #app #home-tong #home #form-dn form::before {
   position: absolute;
-  width: 1500px;
-  height: 1500px;
+  width: 2500px;
+  height: 2500px;
   display: block;
   content: "";
   top: -750px;
@@ -77,7 +77,6 @@ body #app #home-tong #home #form-dn #dangnhap:hover {
 }
 body #app #home-tong #home #bd {
   display: block;
-  position: relative;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -85,12 +84,24 @@ body #app #home-tong #home #bd {
 }
 body #app #home-tong #home #bd img {
   width: 1500px;
+  position: relative;
+}
+body #app #home-tong #home #bd img::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, transparent, black, black, black);
 }
 body #app #home-tong #home #bd p {
   text-align: center;
   position: absolute;
-  top: 30%;
+  top: 60%;
   margin-bottom: 8%;
+  z-index: 3;
   color: white;
   font-weight: 700;
   gap: 60px;
@@ -172,60 +183,87 @@ body .xemphim {
 body .footer {
   display: flex;
 }
-body .phimnoibat {
-  color: antiquewhite;
-}
-body .phimnoibat h1 {
-  color: antiquewhite;
-}
-body .phimnoibat #noibat {
-  position: relative;
-  z-index: 2;
-}
-body .phimnoibat #noibat::before {
-  top: 0;
-  left: 0;
-  width: 1800px;
-  height: 1000px;
-  position: absolute;
-  content: "";
-  background-image: linear-gradient(to 80%, transparent, black);
-  z-index: 6;
-}
-body .phimnoibat #noibat #link {
-  text-decoration: none;
-  color: antiquewhite;
-}
-body .phimnoibat #noibat #link p {
-  color: antiquewhite;
-}
-
-.menu {
+body .menut {
   align-items: center;
   width: 1500px;
-  color: white;
+  color: rgb(244, 243, 243);
   background-color: rgb(125, 207, 104);
   font-size: larger;
   font-weight: 200px;
   position: sticky;
   top: 0;
-  z-index: 5;
+  z-index: 3;
 }
-.menu img {
+body .menut img {
   padding: 5px;
   width: 100%;
   height: 100%;
 }
-.menu .menuall {
-  position: relative;
-}
-.menu .menuall .navbar-nav {
+body .menut .menuall .navbar-nav {
   position: absolute;
   right: 30%;
+  z-index: 0;
   gap: 50px;
 }
-.menu .menuall .search-container {
+body .phimnoibat {
+  color: antiquewhite;
+}
+body .phimnoibat h1 {
+  color: antiquewhite;
+  font-size: 40px;
+  z-index: 3;
+}
+body .phimnoibat #noibat {
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 1;
+}
+body .phimnoibat #noibat::before {
   position: absolute;
-  right: 50px;
-  top: 50px;
+  top: 0;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: linear-gradient(to top, transparent, black);
+  z-index: -1;
+}
+body .phimnoibat #noibat::after {
+  position: absolute;
+  top: 0;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "Phim nổi bật";
+  font-size: 50px;
+  font-weight: 800;
+  transform: translate(5%, 56%);
+  z-index: -1;
+}
+body .phimnoibat #noibat .noidungpnb {
+  transform: translate(5%, -200px);
+  font-size: 18px;
+  font-weight: 300;
+}
+body .phimnoibat #noibat .noidungpnb p {
+  width: 500px;
+  margin: 10px;
+}
+body .phimnoibat #noibat .noidungpnb #link {
+  text-decoration: none;
+  color: antiquewhite;
+  z-index: 3;
+  border: solid greenyellow 3px;
+  padding: 8px;
+  border-radius: 8px;
+  z-index: 10;
+}
+body .phimnoibat #noibat .noidungpnb #link p {
+  color: antiquewhite;
+}
+body .phimnoibat #noibat .noidungpnb #link:hover {
+  background-image: linear-gradien to right, transparent, black;
 }/*# sourceMappingURL=App.css.map */

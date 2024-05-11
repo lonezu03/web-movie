@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 
 const menu = () => {
+  console.log(window.loai)
   return (
-    <div className="menu">
+    <div className="menut">
       <div className="menuall">
         <nav className="navbar navbar-expand color-white   menu">
           <Link to={"/trangchu"}>
