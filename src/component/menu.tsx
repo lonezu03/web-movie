@@ -46,11 +46,12 @@ const menu = () => {
                 </a>
               </li>
             </ul>
+            <div id="user"><p>user: {window.tenTK+" ("+window.loai+")"}</p></div>
+
           </div>
 
         </nav>
 
-        <div><p>user: {window.tenTK}</p></div>
         {/* <div className="search-container ">
           <form role="search" id="form">
             <input

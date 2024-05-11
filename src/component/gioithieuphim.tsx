@@ -8,18 +8,27 @@ function gioithieuphim (props) {
     <div className="gioithieuphim">
       <div>
         <button>
-          <div style={{ backgroundImage: `url(${phim.link_img})` }}>
-            {/* Nội dung của component con */}
+          <div  id="anh">
+          <img src={phim.link_img} alt="" />
           </div>
         </button>
       </div>
-
-      <div>
+      <div id="chuacontentvabovochoday">
+      <div id="content">
         <p>New Episodes</p>
         <h3 id="title">{phim.name}</h3>{" "}
+        <h5>{phim.mota}</h5>
+
       </div>
-      <h5>{phim.mota}</h5>
-      <div></div>
+      <div id="bovochoday">
+      <img src="https://png.pngtree.com/png-vector/20190726/ourlarge/pngtree-share-icon-design-vector-png-image_1588358.jpg" alt="" />
+      <div>
+        <h2>Prime Video</h2>
+        <p>Streaming Channels</p>
+      </div>
+      <button>WATCH NOW</button>
+      </div>
+      </div>
     </div>
   )
 }
