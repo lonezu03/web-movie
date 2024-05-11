@@ -12,7 +12,7 @@ const Xemphim = () => {
       <Menu />
       <Gioithieuphim data={gt} />
       <div className="d-flex justify-content-center">
-        <iframe
+        <iframe id="my-iframe"
           width="835"
           height="462"
           src={phim.link}

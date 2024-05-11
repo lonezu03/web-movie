@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 function gioithieuphim (props) {
   //const {id,name,link_img,mota } = props;
   const phim=props.data
@@ -9,6 +11,7 @@ function gioithieuphim (props) {
       <div>
         <button>
           <div  id="anh">
+            
           <img src={phim.link_img} alt="" />
           </div>
         </button>
@@ -28,6 +31,10 @@ function gioithieuphim (props) {
       </div>
       <button>WATCH NOW</button>
       </div>
+      </div>
+      <div id="dow"><p>DOWLOAD</p>
+      <FontAwesomeIcon icon={faDownload} />
+
       </div>
     </div>
   )

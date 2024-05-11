@@ -25,13 +25,13 @@ const menu = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  <Link to={`/trangchu`}> Trang chủ </Link>
+              <li className="nav-item active ">
+                <a className="nav-link .text-primary" href="#">
+                  <Link to={`/trangchu`} id="link"> Trang chủ </Link>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link .text-primary" href="#">
                   Liên hệ
                 </a>
               </li>

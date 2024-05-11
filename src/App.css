@@ -181,20 +181,28 @@ body .trangchu {
   background-color: rgb(0, 0, 0);
 }
 body .xemphim {
-  background-color: pink;
+  background-color: black;
   z-index: 2;
 }
 body .xemphim .gioithieuphim {
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 600px;
+  width: 1499px;
+  background-image: url("https://movie-detail-drab.vercel.app/assets/images/movie-detail-bg.png  ");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .xemphim .gioithieuphim #anh {
+  background-color: aliceblue;
 }
 body .xemphim .gioithieuphim #anh img {
   height: 450px;
   width: 300px;
 }
 body .xemphim .gioithieuphim #chuacontentvabovochoday {
-  transform: translate(400px, -400px);
+  transform: translate(450px, -400px);
 }
 body .xemphim .gioithieuphim #chuacontentvabovochoday #content {
   position: relative;
@@ -202,12 +210,22 @@ body .xemphim .gioithieuphim #chuacontentvabovochoday #content {
 body .xemphim .gioithieuphim #chuacontentvabovochoday #content p {
   font-size: 30px;
   font-weight: 1000;
+  color: #fcf22f;
 }
 body .xemphim .gioithieuphim #chuacontentvabovochoday #content h3 {
   font-size: 56px;
+  color: #fcf22f;
   font-weight: 800;
 }
+body .xemphim .gioithieuphim #chuacontentvabovochoday #content h3::first-letter {
+  color: white;
+}
+body .xemphim .gioithieuphim #chuacontentvabovochoday #content h5 {
+  width: 650px;
+  color: #958c7d;
+}
 body .xemphim .gioithieuphim #chuacontentvabovochoday #bovochoday {
+  position: absolute;
   display: flex;
   gap: 30px;
   border: 2px solid gray;
@@ -217,6 +235,7 @@ body .xemphim .gioithieuphim #chuacontentvabovochoday #bovochoday {
   justify-content: center;
   align-items: center;
   width: 500px;
+  top: 140%;
 }
 body .xemphim .gioithieuphim #chuacontentvabovochoday #bovochoday img {
   width: 5%;
@@ -234,6 +253,36 @@ body .xemphim .gioithieuphim #chuacontentvabovochoday #bovochoday button {
   height: fit-content;
   border: solid rgb(207, 197, 100);
   border-radius: 100px;
+}
+body .xemphim .gioithieuphim #dow {
+  position: absolute;
+  right: 10%;
+  bottom: 24%;
+  transform: rotate(0.25turn) translateY(100%);
+  transform-origin: bottom right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #b5ac03;
+  border: solid rgb(148, 148, 14);
+  border-radius: 9px;
+}
+body .xemphim .gioithieuphim #dow p {
+  color: white;
+  font-size: 18px;
+  align-items: center;
+  letter-spacing: 5px;
+  font-family: " sans-serif";
+  transform: translate(0, 8px);
+}
+body .xemphim .gioithieuphim #dow:hover {
+  background-color: #7a7507;
+}
+body .xemphim #my_iframe {
+  margin-top: 50px;
+  left: 60px;
 }
 body .footer {
   display: flex;
@@ -254,21 +303,26 @@ body .menut img {
   width: 100%;
   height: 100%;
 }
-body .menut .menuall .navbarNav {
-  position: relative;
-  width: 100%;
-}
-body .menut .menuall .navbarNav .navbar-nav {
+body .menut .menuall .navbar-nav {
   position: absolute;
   left: 30%;
   z-index: 0;
   gap: 50px;
   transform: translate(50px, 0);
+  font-size: 25px;
+  color: blue;
+  font-weight: 600;
 }
-body .menut .menuall .navbarNav #user {
+body .menut .menuall .navbar-nav #link {
+  text-decoration: none;
+}
+body .menut .menuall #user {
   position: absolute;
-  transform: translate(50px, 0);
+  transform: translate(0px, 8px);
+  color: blue;
   right: 5%;
+  font-size: 22px;
+  font-weight: 500;
 }
 body .phimnoibat {
   color: antiquewhite;
@@ -276,6 +330,7 @@ body .phimnoibat {
 body .phimnoibat h1 {
   color: antiquewhite;
   font-size: 40px;
+  height: 900px;
   z-index: 3;
 }
 body .phimnoibat #noibat {
@@ -290,10 +345,10 @@ body .phimnoibat #noibat::before {
   display: block;
   left: 0;
   width: 100%;
-  height: 65%;
+  height: 55%;
   content: "";
   z-index: 2;
-  background-image: linear-gradient(to top, transparent, black);
+  background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5333333333), black);
 }
 body .phimnoibat #noibat::after {
   position: absolute;
@@ -303,19 +358,26 @@ body .phimnoibat #noibat::after {
   content: "Phim nổi bật";
   width: 100%;
   height: 100px;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 800;
-  transform: translate(5%, 560px);
+  transform: translate(5%, 420px);
   z-index: 3;
 }
 body .phimnoibat #noibat .noidungpnb {
-  transform: translate(5%, -220px);
-  font-size: 18px;
+  transform: translate(5%, -340px);
+  font-size: 20px;
   font-weight: 300;
+}
+body .phimnoibat #noibat .noidungpnb #tenphim {
+  font-size: 30px;
+  color: yellow;
+  font-weight: 500;
+  font-family: cursive;
 }
 body .phimnoibat #noibat .noidungpnb p {
   width: 500px;
-  margin: 10px;
+  margin: 25px;
+  margin-left: 0;
 }
 body .phimnoibat #noibat .noidungpnb #link {
   text-decoration: none;
@@ -330,5 +392,5 @@ body .phimnoibat #noibat .noidungpnb #link p {
   color: antiquewhite;
 }
 body .phimnoibat #noibat .noidungpnb #link:hover {
-  background-image: linear-gradien to right, transparent, black;
+  background-color: rgb(116, 116, 15);
 }/*# sourceMappingURL=App.css.map */

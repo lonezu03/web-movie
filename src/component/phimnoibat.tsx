@@ -8,7 +8,7 @@ const phimnoibat = () => {
     name: "Trường nguyệt tẫn minh",
   link_img: "https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/176627/Originals/poster-phim-hoat-hinh-1.jpg",
   
-  link: "https://www.youtube.com/embed/WXLunaC5nWk", mota:"Để cứu lấy chúng sinh, con gái tông chưởng môn quay ngược về quá khứ để ngăn cản tên ma thần trước khi hắn bị tà cốt trong người xâm chiếm hoàn toàn."
+  link: "https://www.youtube.com/embed/5XPaB6Gu9XY", mota:"Để cứu lấy chúng sinh, con gái tông chưởng môn quay ngược về quá khứ để ngăn cản tên ma thần trước khi hắn bị tà cốt trong người xâm chiếm hoàn toàn."
  }
     return (
       <div className="phimnoibat">
@@ -20,11 +20,11 @@ const phimnoibat = () => {
         </video>
         
         <div className="noidungpnb">
-        <p>Trường nguyệt tẫn minh</p>
+        <p id="tenphim">{phim.name}</p>
         <Link to={`/xemphim/${phim.id}`}  state={{ phim }} id="link">
         Watch now
           </Link>
-          <p>{phim.mota}</p>
+          <p >{phim.mota}</p>
           </div>
       </div>
 
