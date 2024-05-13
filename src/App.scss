@@ -449,6 +449,13 @@ body {
           background-color: rgb(116, 116, 15);
         }
       }
+      #iconnext{
+        display: flex;
+        gap:30px;
+        position: absolute;
+        right: 10%;
+        bottom: 32%;
+      }
     }
   }
 }

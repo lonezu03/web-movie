@@ -408,4 +408,11 @@ body .phimnoibat #noibat .noidungpnb #link p {
 }
 body .phimnoibat #noibat .noidungpnb #link:hover {
   background-color: rgb(116, 116, 15);
+}
+body .phimnoibat #noibat #iconnext {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  right: 10%;
+  bottom: 32%;
 }/*# sourceMappingURL=App.css.map */
