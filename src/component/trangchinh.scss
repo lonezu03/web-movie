@@ -1,18 +1,21 @@
+.trangchu{
+  .chuaphimvaloc{
+  display: flex;
 .column1 {
   height: fit-content;
-  width: 80%;
-  margin: auto;
+  width: 75%;
+  //margin: auto;
   padding-bottom: 30px;
   padding-top: 30px;
   
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 65px;
+  gap: 10px;
   //display: flex;
   justify-content: center;
   align-items: left;
-  background-color: rgba(80, 75, 35, 0.476);
+  background-color: rgba(234, 227, 169, 0.476);
   border:solid white 3px;
   border-radius: 20px ;
   .column15{
@@ -45,12 +48,28 @@
     #title{
       width: 200px;
       font-size: 20px;
-      padding-top: 30px;
+      padding-top: 10px;
       padding-left: 10px;
 
     }
   }
 }
+
+.ulloc{
+  padding-left: 90px;
+  color: yellowgreen;
+  list-style-type: none;
+  font-size: 25px;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  span{
+    font-weight: 700;
+    text-decoration: underline ;
+  }
+}
+
 // .trangchu{
 // .menuall{
 //   position: relative;
@@ -69,3 +88,5 @@
 //     top:50px;
 //   }
 // }}
+}
+}

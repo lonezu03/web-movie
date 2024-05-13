@@ -280,7 +280,11 @@ body .xemphim .gioithieuphim #dow p {
 body .xemphim .gioithieuphim #dow:hover {
   background-color: #7a7507;
 }
+body .xemphim .phimne {
+  color: green;
+}
 body .xemphim #my_iframe {
+  height: 500px;
   margin-top: 50px;
   left: 60px;
 }
@@ -362,6 +366,9 @@ body .phimnoibat #noibat::after {
   font-weight: 800;
   transform: translate(5%, 420px);
   z-index: 3;
+}
+body .phimnoibat #noibat #vd {
+  display: block;
 }
 body .phimnoibat #noibat .noidungpnb {
   transform: translate(5%, -340px);

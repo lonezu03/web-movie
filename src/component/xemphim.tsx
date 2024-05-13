@@ -11,7 +11,8 @@ const Xemphim = () => {
     <div className="xemphim">
       <Menu />
       <Gioithieuphim data={gt} />
-      <div className="d-flex justify-content-center">
+      <div className="phimne">
+        <h1>{phim.name}</h1>
         <iframe id="my-iframe"
           width="835"
           height="462"

@@ -21,3 +21,5 @@ npm i --save @fortawesome/react-fontawesome@latest
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
+hoạt hình , hành động, cổ trang, viễn tưởng

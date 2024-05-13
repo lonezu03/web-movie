@@ -3,7 +3,12 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 function gioithieuphim (props) {
   //const {id,name,link_img,mota } = props;
   const phim=props.data
-  
+  function cun(){
+    window.scrollTo({
+      top: 900,
+      behavior: "smooth" // Cuộn mềm mại
+    });
+  }
   console.log (props.data)
   console.log(phim)
   return (
@@ -29,7 +34,7 @@ function gioithieuphim (props) {
         <h2>Prime Video</h2>
         <p>Streaming Channels</p>
       </div>
-      <button>WATCH NOW</button>
+      <button onClick={cun}>WATCH NOW</button>
       </div>
       </div>
       <div id="dow"><p>DOWLOAD</p>
