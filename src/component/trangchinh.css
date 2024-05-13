@@ -1,4 +1,5 @@
 .trangchu .chuaphimvaloc {
+  background-color: #555458;
   display: flex;
 }
 .trangchu .chuaphimvaloc .column1 {
@@ -13,21 +14,16 @@
   gap: 10px;
   justify-content: center;
   align-items: left;
-  background-color: rgba(234, 227, 169, 0.476);
-  border: solid white 3px;
-  border-radius: 20px;
 }
 .trangchu .chuaphimvaloc .column1 .column15 {
   height: 510px;
 }
 .trangchu .chuaphimvaloc .column1 .column15 .anhphim {
-  border: 3px solid rgb(97, 79, 79);
-  border-radius: 10px;
-  background-color: aliceblue;
+  border: 2px solid rgb(97, 79, 79);
   width: 300px;
+  padding: 10px;
   height: 450px;
   display: flex;
-  grid-template-rows: 50% 25% 25%;
   z-index: 1;
   position: relative;
 }
@@ -39,22 +35,40 @@
   text-decoration: none;
   position: relative;
   text-align: left;
+  background-color: black;
 }
 .trangchu .chuaphimvaloc .column1 #link #title {
   width: 200px;
-  font-size: 20px;
-  padding-top: 10px;
-  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 5px;
+  padding-left: 18px;
+}
+.trangchu .chuaphimvaloc .column1 #link #title:hover {
+  color: #b5ac03;
+}
+.trangchu .chuaphimvaloc .column1 #link span {
+  position: absolute;
+  color: white;
+  top: 10px;
+  left: 10px;
+  border: solid black 2px;
+  background-color: #821708;
+  padding: 1px 6px;
+  z-index: 9;
 }
 .trangchu .chuaphimvaloc .ulloc {
-  padding-left: 90px;
   color: yellowgreen;
+  text-align: left;
+  width: 300px;
   list-style-type: none;
   font-size: 25px;
   margin-top: 90px;
   display: flex;
+  font-family: cursive;
   flex-direction: column;
   gap: 20px;
+  border: solid black 4px;
 }
 .trangchu .chuaphimvaloc .ulloc span {
   font-weight: 700;

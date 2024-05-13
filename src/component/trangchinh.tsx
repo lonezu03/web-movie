@@ -4,7 +4,7 @@ import Menu from "./menu";
 import Phimnoibat from "./phimnoibat";
 import Footer from "./footer";
 import { useState } from "react";
-const trangchinh = () => {
+const Trangchinh = () => {
  // const location = useLocation(); // Lấy data được truyền qua state
  // const user = location.state?.loai;
  
@@ -71,7 +71,10 @@ function loc(e){
     <div className="trangchu">
       {<Menu />}
       {<Phimnoibat/>}
+
+
       <div className="chuaphimvaloc">
+        <div className="nensang"></div>
       <div className="column1" style={{}}>
         {dsphim1.map((phim) => (
           <Link to={`/xemphim/${phim.id}`}  state={{ phim }} id="link">
@@ -117,4 +120,4 @@ function loc(e){
   );
 };
 
-export default trangchinh;
+export default Trangchinh;

@@ -44,8 +44,8 @@ body #app #home-tong #home #form-dn form {
 }
 body #app #home-tong #home #form-dn form::before {
   position: absolute;
-  width: 2500px;
-  height: 2500px;
+  width: 3500px;
+  height: 3500px;
   display: block;
   content: "";
   top: -750px;
@@ -227,6 +227,7 @@ body .xemphim .gioithieuphim #chuacontentvabovochoday #content h5 {
 body .xemphim .gioithieuphim #chuacontentvabovochoday #bovochoday {
   position: absolute;
   display: flex;
+  color: #958c7d;
   gap: 30px;
   border: 2px solid gray;
   border-radius: 5px;
@@ -236,6 +237,9 @@ body .xemphim .gioithieuphim #chuacontentvabovochoday #bovochoday {
   align-items: center;
   width: 500px;
   top: 140%;
+}
+body .xemphim .gioithieuphim #chuacontentvabovochoday #bovochoday #icon {
+  transform: translate(0, 4px);
 }
 body .xemphim .gioithieuphim #chuacontentvabovochoday #bovochoday img {
   width: 5%;
@@ -253,6 +257,9 @@ body .xemphim .gioithieuphim #chuacontentvabovochoday #bovochoday button {
   height: fit-content;
   border: solid rgb(207, 197, 100);
   border-radius: 100px;
+}
+body .xemphim .gioithieuphim #chuacontentvabovochoday #bovochoday button:hover {
+  background-color: #b5ac03;
 }
 body .xemphim .gioithieuphim #dow {
   position: absolute;
@@ -281,7 +288,9 @@ body .xemphim .gioithieuphim #dow:hover {
   background-color: #7a7507;
 }
 body .xemphim .phimne {
-  color: green;
+  color: yellow;
+  margin-top: 600px;
+  text-align: center;
 }
 body .xemphim #my_iframe {
   height: 500px;
@@ -379,7 +388,6 @@ body .phimnoibat #noibat .noidungpnb #tenphim {
   font-size: 30px;
   color: yellow;
   font-weight: 500;
-  font-family: cursive;
 }
 body .phimnoibat #noibat .noidungpnb p {
   width: 500px;

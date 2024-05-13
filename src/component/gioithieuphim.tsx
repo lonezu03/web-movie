@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faSquareShareNodes } from '@fortawesome/free-solid-svg-icons';
 function gioithieuphim (props) {
   //const {id,name,link_img,mota } = props;
   const phim=props.data
@@ -29,8 +30,9 @@ function gioithieuphim (props) {
 
       </div>
       <div id="bovochoday">
-      <img src="https://png.pngtree.com/png-vector/20190726/ourlarge/pngtree-share-icon-design-vector-png-image_1588358.jpg" alt="" />
-      <div>
+      
+      <p id="icon"><FontAwesomeIcon icon={faSquareShareNodes} size="3x" style={{ color: 'blue' }}/></p>
+            <div>
         <h2>Prime Video</h2>
         <p>Streaming Channels</p>
       </div>

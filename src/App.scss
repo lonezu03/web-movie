@@ -37,8 +37,8 @@ body {
           form {
             &::before {
               position: absolute;
-              width: 2500px;
-              height: 2500px;
+              width: 3500px;
+              height: 3500px;
               display: block;
               content: "";
               top: -750px;
@@ -234,6 +234,8 @@ body {
         #bovochoday {
           position: absolute;
           display: flex;
+          color: #958c7d;
+
           gap: 30px;
           border: 2px solid gray;
           border-radius: 5px;
@@ -243,6 +245,9 @@ body {
           align-items: center;
           width: 500px;
           top: 140%;
+          #icon{
+            transform: translate(0,4px);
+          }
           img {
             width: 5%;
             height: 5%;
@@ -257,6 +262,9 @@ body {
             height: fit-content;
             border: solid rgb(207, 197, 100);
             border-radius: 100px;
+          }
+          button:hover{
+            background-color: #b5ac03;
           }
         }
       }
@@ -288,7 +296,11 @@ body {
       }
     }
     .phimne {
-      color: green;
+      color: yellow;
+      //display: flex;
+      margin-top:600px ;
+      text-align: center;
+      //padding-top:30px;
     }
     #my_iframe {
       height: 500px;
@@ -414,7 +426,6 @@ body {
           font-size: 30px;
           color: yellow;
           font-weight: 500;
-          font-family: cursive;
         }
         p {
           width: 500px;

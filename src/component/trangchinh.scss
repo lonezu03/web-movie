@@ -1,6 +1,20 @@
 .trangchu{
   .chuaphimvaloc{
+    background-color: #555458;
   display: flex;
+// .nensang{
+//   width: 1900px;
+//   height: 300px;
+//   background-image: radial-gradient(circle, red, yellow, green,white);
+//   background-color: white;
+//  // backdrop-filter: blur(20px);
+//  position: absolute;
+//  position: sticky;
+//  z-index: -1;
+
+  
+
+// }
 .column1 {
   height: fit-content;
   width: 75%;
@@ -15,20 +29,21 @@
   //display: flex;
   justify-content: center;
   align-items: left;
-  background-color: rgba(234, 227, 169, 0.476);
-  border:solid white 3px;
-  border-radius: 20px ;
+  //background-color: rgba(81, 80, 60, 0.476);
+ // border:solid white 3px;
+ // border-radius: 20px ;
   .column15{
     height: 510px;
 
   .anhphim {
-    border: 3px solid rgb(97, 79, 79);
-    border-radius: 10px;
-    background-color: aliceblue;
+    border: 2px solid rgb(97, 79, 79);
+   // border-radius: 10px;
+    //background-color: aliceblue;
     width: 300px;
+    padding: 10px;
     height: 450px;
     display: flex;
-    grid-template-rows: 50% 25% 25%;
+   // grid-template-rows: 50% 25% 25%;
     z-index: 1;
     position: relative;
     
@@ -45,25 +60,46 @@
     text-decoration: none;
     position: relative;
     text-align: left;
+    background-color: black;
     #title{
       width: 200px;
-      font-size: 20px;
-      padding-top: 10px;
-      padding-left: 10px;
+      font-size: 18px;
+      font-weight: 400;
+      padding-top: 5px;
+      padding-left: 18px;
 
+    }
+    #title:hover{
+      color :#b5ac03;
+    }
+    span{
+      position: absolute;
+      color:white;
+      top:10px;
+      left: 10px;
+      border: solid black 2px;
+      background-color: #821708;
+      padding: 1px 6px;
+      z-index: 9;
     }
   }
 }
 
 .ulloc{
-  padding-left: 90px;
+  //padding-left: 90px;
   color: yellowgreen;
+  text-align: left;
+  
+  width: 300px;
   list-style-type: none;
   font-size: 25px;
   margin-top: 90px;
   display: flex;
+  font-family: cursive;
+
   flex-direction: column;
   gap: 20px;
+  border: solid black 4px;
   span{
     font-weight: 700;
     text-decoration: underline ;
