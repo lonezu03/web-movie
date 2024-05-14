@@ -7,12 +7,12 @@ function menuH  ()  {
 <div className="menuall">
 <nav className="navbar navbar-expand-lg navbar-light  menu">
   <a className="navbar-brand" href="#">
-    <img
-      width="17%"
-      style={{ height: "17%" }}
-      src="https://movie-detail-drab.vercel.app/assets/images/logo.svg"
-      alt=""
-    />
+  <Link to={"/trangchu"}>
+            <img id="logo"
+              src="https://movie-detail-drab.vercel.app/assets/images/logo.svg"
+              alt=""
+            />
+          </Link>
   </a>
   <button
     className="navbar-toggler"
@@ -29,7 +29,7 @@ function menuH  ()  {
     <ul className="navbar-nav">
       <li className="nav-item active">
         <a className="nav-link" href="#">
-        <Link to={`/trangchu`}>  Trang chủ </Link>
+        <Link to={`/trangchu`} id="link"> Trang chủ </Link>
         </a>
       </li>
       <li className="nav-item">

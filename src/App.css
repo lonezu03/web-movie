@@ -92,7 +92,7 @@ body #app #home-tong #home #bd::before {
   top: 0;
   z-index: 2;
   left: 0;
-  background-image: linear-gradient(to bottom, transparent, black);
+  background-image: linear-gradient(to bottom, transparent, black, transparent, black);
 }
 body #app #home-tong #home #bd img {
   width: 1500px;
@@ -109,6 +109,7 @@ body #app #home-tong #home #bd p {
   font-weight: 700;
   gap: 60px;
   font-size: 40px;
+  left: 10%;
 }
 body #app #home-tong #ads1 {
   color: aliceblue;
@@ -120,15 +121,16 @@ body #app #home-tong #ads1 {
 }
 body #app #home-tong #ads1 h1 {
   position: absolute;
-  top: 30%;
-  left: 8%;
+  top: 40%;
+  left: 10%;
   font-weight: 900;
   width: 400px;
 }
 body #app #home-tong #ads1 p {
   position: absolute;
-  top: 55%;
-  left: 8%;
+  top: 60%;
+  left: 10%;
+  font-size: 25px;
   font-weight: 600;
   width: 400px;
 }
@@ -136,13 +138,15 @@ body #app #home-tong #ads1 img {
   position: absolute;
   background-color: transparent;
   right: 0;
+  top: 30%;
   z-index: 2;
 }
 body #app #home-tong #ads1 video {
   position: absolute;
-  right: 4%;
-  top: 19%;
-  width: 560px;
+  right: -8%;
+  top: 40%;
+  width: 900px;
+  height: 250px;
   z-index: 1;
 }
 body #app #home-tong #ads2 {
@@ -304,12 +308,14 @@ body .menut {
   align-items: center;
   width: 1500px;
   color: rgb(244, 243, 243);
-  background-color: rgb(125, 207, 104);
+  background-color: rgba(0, 0, 0, 0.2);
   font-size: larger;
   font-weight: 200px;
   position: sticky;
   top: 0;
   z-index: 8;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 body .menut img {
   padding: 5px;
@@ -384,10 +390,19 @@ body .phimnoibat #noibat .noidungpnb {
   font-size: 20px;
   font-weight: 300;
 }
-body .phimnoibat #noibat .noidungpnb #tenphim {
+body .phimnoibat #noibat .noidungpnb #chuatenvatheloai {
+  display: flex;
+  width: 600px;
+}
+body .phimnoibat #noibat .noidungpnb #chuatenvatheloai #theloai {
+  color: greenyellow;
+  font-weight: 500;
+  transform: translate(0, 10px);
+}
+body .phimnoibat #noibat .noidungpnb #chuatenvatheloai #tenphim {
   font-size: 30px;
   color: yellow;
-  font-weight: 500;
+  font-weight: 700;
 }
 body .phimnoibat #noibat .noidungpnb p {
   width: 500px;
@@ -415,4 +430,142 @@ body .phimnoibat #noibat #iconnext {
   position: absolute;
   right: 10%;
   bottom: 32%;
+}
+
+@media only screen and (max-width: 600px) {
+  #app #home-tong {
+    max-width: 600px;
+  }
+  #app #home-tong #home {
+    position: relative;
+  }
+  #app #home-tong #home #btn-dn {
+    position: absolute;
+    top: 13px;
+    right: 40%;
+    z-index: 9;
+    background-image: linear-gradient(to right, red, blue);
+    border: solid white 4px;
+    border-radius: 8px;
+  }
+  #app #home-tong #home #form-dn form {
+    z-index: 100;
+    color: whitesmoke;
+    position: fixed; /* Đặt form cố định so với viewport */
+    top: 0; /* Đặt form ở giữa theo chiều dọc */
+    left: 5%; /* Đặt form ở giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Dịch chuyển form để nó chính xác ở giữa */
+  }
+  #app #home-tong #home #form-dn form::before {
+    position: absolute;
+    width: 3500px;
+    height: 3500px;
+    display: block;
+    content: "";
+    top: -2050px;
+    left: -850px;
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    z-index: -1;
+  }
+  #app #home-tong #home #form-dn #btnCancle {
+    position: absolute;
+    right: 0%;
+    color: white;
+    margin: 5px;
+  }
+  #app #home-tong #home #form-dn #dangnhap {
+    color: white;
+    background-color: blur;
+    margin: 0px;
+    padding: 8px;
+    height: 100%;
+    border: 3px solid;
+    border-image-source: linear-gradient(red, blue);
+    border-image-slice: 1;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  #app #home-tong #home #form-dn #dangnhap:hover {
+    background-color: rgb(16, 5, 169);
+  }
+  #app #home-tong #home #bd {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, transparent, black);
+  }
+  #app #home-tong #home #bd::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: 0;
+    background-image: linear-gradient(to bottom, transparent, black);
+  }
+  #app #home-tong #home #bd img {
+    width: 1500px;
+    position: relative;
+    transform: translate(-25%, 0);
+    z-index: 1;
+  }
+  #app #home-tong #home #bd p {
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    margin-bottom: 8%;
+    z-index: 3;
+    color: white;
+    font-weight: 700;
+    gap: 60px;
+    font-size: 40px;
+    left: 10%;
+  }
+  #app .menut {
+    align-items: center;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    font-size: 15px;
+    font-weight: 200px;
+    position: sticky;
+    top: 0;
+    z-index: 8;
+  }
+  #app .menut img {
+    padding: 5px;
+    width: 60%;
+    height: 60%;
+  }
+  #app .menut .menuall .navbar-nav {
+    position: absolute;
+    left: 10%;
+    z-index: 0;
+    gap: 10px;
+    transform: translate(50px, 0);
+    font-size: 15px;
+    color: rgb(53, 53, 123);
+    font-weight: 600;
+  }
+  #app .menut .menuall .navbar-nav #link {
+    text-decoration: none;
+  }
+  #app .menut .menuall #user {
+    position: absolute;
+    transform: translate(0px, 8px);
+    color: rgb(72, 72, 219);
+    right: 5%;
+    font-size: 13px;
+    width: 100px;
+    font-weight: 500;
+  }
+  .phimnoibat {
+    max-width: 600px;
+  }
 }/*# sourceMappingURL=App.css.map */
