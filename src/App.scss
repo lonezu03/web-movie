@@ -472,20 +472,89 @@ body {
 
 @media only screen and (max-width: 390px) {
   #app{ 
+    .gioithieuphim {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      max-width: 390px;
+      #btnanh{
+        transform: translate(20px,20px) !important;
+
+      #anh {
+        //margin-left: 8px;
+        img {
+          
+        }
+      }}
+      #chuacontentvabovochoday {
+        #content {
+          position: relative;
+          p {
+            
+          }
+          h3 {
+            
+          }
+          h5 {
+            
+          }
+        }
+        #bovochoday {
+          
+          #icon{
+          }
+          img {
+            
+          }
+          h2 {
+            
+          }
+          button {
+            
+          }
+          button:hover{
+            background-color: #b5ac03;
+          }
+        }
+      }
+      #dow {
+       
+        p {
+          color: white;
+          font-size: 18px;
+          align-items: center;
+          letter-spacing: 5px;
+          font-family: " sans-serif";
+          transform: translate(0, 8px);
+        }
+      }
+      #dow:hover {
+        background-color: #7a7507;
+      }
+    }
 #home-tong{
-background-color: #b5ac03;
+background-color: #0f0e0b7a;
 width: 390px;  
     #home {
       position: relative;
-      height: 200px;
+      height: 350px!important;
       
       #btn-dn {
-        
+        transform: translate(-360%,0);
+        padding: 4px;
+        border:  solid red 1px !important;
+        background-color: rgb(184, 12, 12) !important;
+        background-image: none !important;
+        font-size: 12px;
       }
       #form-dn {
         form {
+          position: absolute;
+          top:0;
+          transform: translate( -650px,-1500px) !important;
           &::before {
-            
+            transform: translate(-1000px,-1000px);
+            height: 3000px !important;
           }
          
         }
@@ -500,10 +569,11 @@ width: 390px;
         }
       }
       #bd {
-        height: 200px;
+        height: 300px !important;
 
         &::before {
-          display: none;
+          //display: none ;
+          height: 300px !important;
          
         }
         img {
@@ -513,12 +583,54 @@ width: 390px;
         p {
           
           max-width: 280px;
-          transform: translate(0,-280px);
+         // transform: translate(0,-280px);
           font-size: 16px !important;
         }
         #gt{
-          transform: translate(10px,-370px);
+          transform: translate(10px,-100px);
         }
+      }
+    }
+    #ads1{
+      text-align: center;
+      height: 350px!important ;
+      h1{
+        z-index: 9;
+        font-size: 21px !important;
+        transform: translate(-60px,-180px);
+      }
+      p{
+        z-index: 9;
+        font-size: 15px!important;
+        transform: translate(-30px,-156px);
+        width: 350px !important;
+      }
+      img{
+        transform: translate(-239px,-140px);
+        width: 400px !important;
+      }
+      video{
+        width: 380px !important;
+        transform: translate(-260px,-147px);
+
+
+      }
+    }
+    #ads2 {
+      
+      h1 {
+        z-index: 9;
+        font-size: 18px !important;
+        transform: translate(-120px,-120px);
+      }
+      p {
+       z-index: 9;
+       font-size: 14px !important;
+       transform: translate(20px,-120px);
+       width: 350px !important;
+      }
+      img {
+        transform: translate(-110px,-60px);
       }
     }
 }
@@ -532,8 +644,8 @@ backdrop-filter: blur(10px) !important;
 
   img {
     padding: 5px;
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
   }
   .menuall {
     //position: relative;
@@ -546,10 +658,10 @@ backdrop-filter: blur(10px) !important;
       // position: relative;
       left: 10%;
       z-index: 0;
-      gap: 10px;
+      gap: 5px;
       transform: translate(50px, 0);
-      font-size: 15px;
-      color: rgb(53, 53, 123);
+      font-size: 12px;
+      color: rgb(0, 0, 108);
       font-weight: 600;
 
       #link {
@@ -558,11 +670,11 @@ backdrop-filter: blur(10px) !important;
     }
     #user {
       position: absolute;
-      transform: translate(0px, 8px);
+      transform: translate(20px, 8px);
       color: rgb(72, 72, 219);
-      right: 5%;
-      font-size: 13px;
-      width: 100px;
+      right: 2px;
+      font-size: 10px;
+      width: 60px;
       font-weight: 500;
     }
   }

@@ -434,30 +434,109 @@ body .phimnoibat #noibat #iconnext {
 }
 
 @media only screen and (max-width: 390px) {
-  #app #home-tong {
+  #app .gioithieuphim {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    max-width: 390px;
+  }
+  #app .gioithieuphim #btnanh {
+    transform: translate(20px, 20px) !important;
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #content {
+    position: relative;
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #bovochoday button:hover {
     background-color: #b5ac03;
+  }
+  #app .gioithieuphim #dow p {
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    letter-spacing: 5px;
+    font-family: " sans-serif";
+    transform: translate(0, 8px);
+  }
+  #app .gioithieuphim #dow:hover {
+    background-color: #7a7507;
+  }
+  #app #home-tong {
+    background-color: rgba(15, 14, 11, 0.4784313725);
     width: 390px;
   }
   #app #home-tong #home {
     position: relative;
-    height: 200px;
+    height: 350px !important;
+  }
+  #app #home-tong #home #btn-dn {
+    transform: translate(-360%, 0);
+    padding: 4px;
+    border: solid red 1px !important;
+    background-color: rgb(184, 12, 12) !important;
+    background-image: none !important;
+    font-size: 12px;
+  }
+  #app #home-tong #home #form-dn form {
+    position: absolute;
+    top: 0;
+    transform: translate(-650px, -1500px) !important;
+  }
+  #app #home-tong #home #form-dn form::before {
+    transform: translate(-1000px, -1000px);
+    height: 3000px !important;
   }
   #app #home-tong #home #bd {
-    height: 200px;
+    height: 300px !important;
   }
   #app #home-tong #home #bd::before {
-    display: none;
+    height: 300px !important;
   }
   #app #home-tong #home #bd img {
     max-width: 390px;
   }
   #app #home-tong #home #bd p {
     max-width: 280px;
-    transform: translate(0, -280px);
     font-size: 16px !important;
   }
   #app #home-tong #home #bd #gt {
-    transform: translate(10px, -370px);
+    transform: translate(10px, -100px);
+  }
+  #app #home-tong #ads1 {
+    text-align: center;
+    height: 350px !important;
+  }
+  #app #home-tong #ads1 h1 {
+    z-index: 9;
+    font-size: 21px !important;
+    transform: translate(-60px, -180px);
+  }
+  #app #home-tong #ads1 p {
+    z-index: 9;
+    font-size: 15px !important;
+    transform: translate(-30px, -156px);
+    width: 350px !important;
+  }
+  #app #home-tong #ads1 img {
+    transform: translate(-239px, -140px);
+    width: 400px !important;
+  }
+  #app #home-tong #ads1 video {
+    width: 380px !important;
+    transform: translate(-260px, -147px);
+  }
+  #app #home-tong #ads2 h1 {
+    z-index: 9;
+    font-size: 18px !important;
+    transform: translate(-120px, -120px);
+  }
+  #app #home-tong #ads2 p {
+    z-index: 9;
+    font-size: 14px !important;
+    transform: translate(20px, -120px);
+    width: 350px !important;
+  }
+  #app #home-tong #ads2 img {
+    transform: translate(-110px, -60px);
   }
   #app .menut {
     max-width: 390px;
@@ -468,17 +547,17 @@ body .phimnoibat #noibat #iconnext {
   }
   #app .menut img {
     padding: 5px;
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
   }
   #app .menut .menuall .navbar-nav {
     position: absolute;
     left: 10%;
     z-index: 0;
-    gap: 10px;
+    gap: 5px;
     transform: translate(50px, 0);
-    font-size: 15px;
-    color: rgb(53, 53, 123);
+    font-size: 12px;
+    color: rgb(0, 0, 108);
     font-weight: 600;
   }
   #app .menut .menuall .navbar-nav #link {
@@ -486,11 +565,11 @@ body .phimnoibat #noibat #iconnext {
   }
   #app .menut .menuall #user {
     position: absolute;
-    transform: translate(0px, 8px);
+    transform: translate(20px, 8px);
     color: rgb(72, 72, 219);
-    right: 5%;
-    font-size: 13px;
-    width: 100px;
+    right: 2px;
+    font-size: 10px;
+    width: 60px;
     font-weight: 500;
   }
   .phimnoibat {
