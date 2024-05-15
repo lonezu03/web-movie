@@ -109,7 +109,7 @@ const Home = () => {
       )}
       <div id="bd">
         <img src="https://cafebiz.cafebizcdn.vn/thumb_w/600/162123310254002176/2022/2/3/photo1643861468728-1643861468806281325325.png" alt="" />
-        <p>phút giây giải trí gắn kết gia đình</p>
+        <p id="gt">phút giây giải trí gắn kết gia đình</p>
         <p style={{
           top:'40%'
         }}>Đăng nhập để có những phút giây giải trí </p>

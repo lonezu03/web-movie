@@ -78,7 +78,7 @@
 
 @media only screen and (max-width: 600px) {
   .trangchu {
-    max-width: 600px;
+    max-width: 390px;
   }
   .trangchu .chuaphimvaloc {
     display: flex;
@@ -90,7 +90,7 @@
     order: 2;
     height: -moz-fit-content;
     height: fit-content;
-    width: 75%;
+    width: 80%;
     padding-bottom: 30px;
     padding-top: 30px;
     display: flex;
@@ -150,14 +150,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     color: rgb(200, 214, 172);
-    text-align: left;
     order: 1;
-    width: 400px;
-    list-style-type: none;
-    font-size: 15px;
-    font-family: cursive;
+    width: 300px;
+    font-size: 12px;
     gap: 20px;
-    border: solid black 4px;
   }
   .trangchu .chuaphimvaloc .ulloc span {
     display: inline;
