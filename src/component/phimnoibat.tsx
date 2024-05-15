@@ -120,7 +120,7 @@ const Phimnoibat = () => {
     <div className="phimnoibat">
       <div>
         <div id="noibat">
-          <video width="1500px" ref={videoRef} autoPlay muted loop id="vd">
+          <video  ref={videoRef} autoPlay muted loop id="vd">
           <source src={phimngan.link} type="video/mp4" />
 
           </video>

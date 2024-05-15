@@ -384,6 +384,7 @@ body .phimnoibat #noibat::after {
 }
 body .phimnoibat #noibat #vd {
   display: block;
+  width: 1500px;
 }
 body .phimnoibat #noibat .noidungpnb {
   transform: translate(5%, -340px);
@@ -567,5 +568,49 @@ body .phimnoibat #noibat #iconnext {
   }
   .phimnoibat {
     max-width: 600px;
+  }
+  .phimnoibat #noibat {
+    position: relative;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 1;
+  }
+  .phimnoibat #noibat::before {
+    position: absolute;
+    top: -20%;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    content: "";
+    z-index: 2;
+  }
+  .phimnoibat #noibat::after {
+    position: absolute;
+    top: 0;
+    display: block;
+    left: 0;
+    content: "Phim nổi bật";
+    width: 100%;
+    height: 100px;
+    font-size: 30px;
+    font-weight: 800;
+    transform: translate(5%, 420px);
+    z-index: 3;
+  }
+  .phimnoibat #noibat #vd {
+    max-width: 500px;
+  }
+  .phimnoibat #noibat .noidungpnb #link {
+    text-decoration: none;
+    color: antiquewhite;
+    border: solid greenyellow 3px;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 8px;
+    z-index: 9;
+  }
+  .phimnoibat #noibat .noidungpnb p {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=App.css.map */
