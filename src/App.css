@@ -545,6 +545,7 @@ body .phimnoibat #noibat #iconnext {
   }
   #app #home-tong #ads1 {
     text-align: center;
+    width: 400px !important;
     height: 350px !important;
   }
   #app #home-tong #ads1 h1 {
@@ -565,6 +566,9 @@ body .phimnoibat #noibat #iconnext {
   #app #home-tong #ads1 video {
     width: 380px !important;
     transform: translate(-9px, -147px);
+  }
+  #app #home-tong #ads2 {
+    width: 405px !important;
   }
   #app #home-tong #ads2 h1 {
     z-index: 9;
