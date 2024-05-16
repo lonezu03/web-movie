@@ -504,14 +504,14 @@ body .phimnoibat #noibat #iconnext {
   }
   #app #home-tong {
     background-color: rgba(15, 14, 11, 0.4784313725);
-    width: 390px;
+    max-width: 390px;
   }
   #app #home-tong #home {
     position: relative;
     height: 350px !important;
   }
   #app #home-tong #home #btn-dn {
-    transform: translate(-360%, 0);
+    transform: translate(-20px, 0);
     padding: 4px;
     border: solid red 1px !important;
     background-color: rgb(184, 12, 12) !important;
@@ -559,17 +559,17 @@ body .phimnoibat #noibat #iconnext {
     width: 350px !important;
   }
   #app #home-tong #ads1 img {
-    transform: translate(-239px, -140px);
+    transform: translate(-9px, -140px);
     width: 400px !important;
   }
   #app #home-tong #ads1 video {
     width: 380px !important;
-    transform: translate(-260px, -147px);
+    transform: translate(-9px, -147px);
   }
   #app #home-tong #ads2 h1 {
     z-index: 9;
     font-size: 18px !important;
-    transform: translate(-120px, -120px);
+    transform: translate(0px, -120px);
   }
   #app #home-tong #ads2 p {
     z-index: 9;
@@ -578,7 +578,7 @@ body .phimnoibat #noibat #iconnext {
     width: 350px !important;
   }
   #app #home-tong #ads2 img {
-    transform: translate(-110px, -60px);
+    transform: translate(-10px, -60px);
   }
   #app .menut {
     max-width: 390px;

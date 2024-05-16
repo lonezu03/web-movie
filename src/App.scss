@@ -574,13 +574,13 @@ body {
     }
 #home-tong{
 background-color: #0f0e0b7a;
-width: 390px;  
+max-width:  390px;  
     #home {
       position: relative;
       height: 350px!important;
       
       #btn-dn {
-        transform: translate(-360%,0);
+        transform: translate(-20px,0);
         padding: 4px;
         border:  solid red 1px !important;
         background-color: rgb(184, 12, 12) !important;
@@ -646,12 +646,12 @@ width: 390px;
         width: 350px !important;
       }
       img{
-        transform: translate(-239px,-140px);
+        transform: translate(-9px,-140px);
         width: 400px !important;
       }
       video{
         width: 380px !important;
-        transform: translate(-260px,-147px);
+        transform: translate(-9px,-147px);
 
 
       }
@@ -661,7 +661,7 @@ width: 390px;
       h1 {
         z-index: 9;
         font-size: 18px !important;
-        transform: translate(-120px,-120px);
+        transform: translate(-0px,-120px);
       }
       p {
        z-index: 9;
@@ -670,7 +670,7 @@ width: 390px;
        width: 350px !important;
       }
       img {
-        transform: translate(-110px,-60px);
+        transform: translate(-10px,-60px);
       }
     }
 }
