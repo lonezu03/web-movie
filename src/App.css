@@ -185,7 +185,7 @@ body .trangchu {
   background-color: rgb(0, 0, 0);
 }
 body .xemphim {
-  background-color: black;
+  background-color: rgb(96, 88, 88);
   z-index: 2;
 }
 body .xemphim .gioithieuphim {
@@ -293,13 +293,15 @@ body .xemphim .gioithieuphim #dow:hover {
 }
 body .xemphim .phimne {
   color: yellow;
-  margin-top: 600px;
+  margin-top: 400px;
   text-align: center;
+  justify-content: center;
 }
-body .xemphim #my_iframe {
+body .xemphim .phimne #my_iframe {
   height: 500px;
   margin-top: 50px;
   left: 60px;
+  transform: translate(20px, 200px) !important;
 }
 body .footer {
   display: flex;
@@ -434,28 +436,68 @@ body .phimnoibat #noibat #iconnext {
 }
 
 @media only screen and (max-width: 390px) {
+  #app .xemphim {
+    max-width: 391px;
+    height: 1900px;
+  }
+  #app .xemphim .phimne h1 {
+    transform: translate(0, -400px);
+  }
+  #app .xemphim .phimne #my-iframe {
+    padding-top: 0;
+    margin-top: 0;
+    max-width: 390px;
+    height: 300px;
+    transform: translate(0, -400px);
+  }
   #app .gioithieuphim {
     align-items: center;
     display: flex;
     flex-direction: row;
     max-width: 390px;
+    height: 1300px;
   }
   #app .gioithieuphim #btnanh {
-    transform: translate(20px, 20px) !important;
+    transform: translate(20px, -300px) !important;
   }
   #app .gioithieuphim #chuacontentvabovochoday #content {
     position: relative;
+    transform: translate(-760px, 500px) !important;
+    text-align: left;
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #bovochoday {
+    transform: translate(-760px, 480px) !important;
+    max-width: 330px;
+    max-height: 200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding: 40px;
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #bovochoday #icon {
+    width: 30px;
+    align-items: center !important;
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #bovochoday h2 {
+    transform: translate(-30px, 15px);
+    min-width: 140px;
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #bovochoday p {
+    min-width: 140px;
+    transform: translate(-30px, 15px);
+  }
+  #app .gioithieuphim #chuacontentvabovochoday #bovochoday button {
+    align-items: center;
+    min-width: 150px;
+    background-color: none;
+    transform: translate(30px, 0);
   }
   #app .gioithieuphim #chuacontentvabovochoday #bovochoday button:hover {
     background-color: #b5ac03;
   }
-  #app .gioithieuphim #dow p {
-    color: white;
-    font-size: 18px;
-    align-items: center;
-    letter-spacing: 5px;
-    font-family: " sans-serif";
-    transform: translate(0, 8px);
+  #app .gioithieuphim #dow {
+    transform: rotate(0) translateY(100%);
+    transform: translate(-110px, 250px);
   }
   #app .gioithieuphim #dow:hover {
     background-color: #7a7507;

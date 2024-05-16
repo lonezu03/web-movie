@@ -194,7 +194,7 @@ body {
     background-color: rgb(0, 0, 0);
   }
   .xemphim {
-    background-color: black;
+    background-color: rgb(96, 88, 88);
 
     z-index: 2;
     .gioithieuphim {
@@ -302,15 +302,18 @@ body {
     .phimne {
       color: yellow;
       //display: flex;
-      margin-top:600px ;
+      margin-top:400px ;
       text-align: center;
+      justify-content: center;
       //padding-top:30px;
+      #my_iframe {
+        height: 500px;
+        margin-top: 50px;
+        left: 60px;
+        transform: translate(20px,200px) !important;
+      }
     }
-    #my_iframe {
-      height: 500px;
-      margin-top: 50px;
-      left: 60px;
-    }
+    
   }
 
   .footer {
@@ -472,13 +475,32 @@ body {
 
 @media only screen and (max-width: 390px) {
   #app{ 
+    .xemphim{
+      max-width: 391px;
+      height: 1900px;
+      .phimne{
+
+        h1{
+          transform: translate(0,-400px);
+
+        }
+        #my-iframe{
+          padding-top: 0;
+          margin-top: 0;
+          max-width: 390px;
+          height: 300px;
+          transform: translate(0,-400px);
+        }
+      }
+    }
     .gioithieuphim {
       align-items: center;
       display: flex;
       flex-direction: row;
       max-width: 390px;
+      height: 1300px;
       #btnanh{
-        transform: translate(20px,20px) !important;
+        transform: translate(20px,-300px) !important;
 
       #anh {
         //margin-left: 8px;
@@ -489,6 +511,8 @@ body {
       #chuacontentvabovochoday {
         #content {
           position: relative;
+          transform: translate(-760px,500px) !important;
+          text-align: left;
           p {
             
           }
@@ -500,17 +524,37 @@ body {
           }
         }
         #bovochoday {
-          
+        transform: translate(-760px,480px) !important;
+        max-width:  330px;
+        max-height: 200px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        padding: 40px;
           #icon{
+          // order: 1;
+            width: 30px;
+            align-items: center !important;
           }
           img {
             
           }
           h2 {
+            transform: translate(-30px,15px);
+            min-width: 140px;
             
           }
+          p{
+            min-width: 140px;
+            transform: translate(-30px,15px);
+
+          }
           button {
-            
+            align-items: center;
+            min-width: 150px;
+            background-color: none;
+            transform: translate(30px,0);
+
           }
           button:hover{
             background-color: #b5ac03;
@@ -518,14 +562,10 @@ body {
         }
       }
       #dow {
-       
+        transform: rotate(0) translateY(100%);
+        transform: translate(-110px,250px);
         p {
-          color: white;
-          font-size: 18px;
-          align-items: center;
-          letter-spacing: 5px;
-          font-family: " sans-serif";
-          transform: translate(0, 8px);
+          
         }
       }
       #dow:hover {
