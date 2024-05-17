@@ -16,6 +16,7 @@ body {
       width: 100%;
       height: fit-content;
       background-size: cover;
+      background-color: #84bb97;
       #home {
         position: relative;
         width: 100%;
@@ -25,12 +26,16 @@ body {
         object-fit: cover;
 
         #btn-dn {
-          position: absolute;
-          top: 13px;
+          //position: absolute;
+          position: fixed;
+          top: 2%;
           right: 10%;
           z-index: 9;
-          background-image: linear-gradient(to right, red, blue);
-          border: solid yellow 4px;
+          //background-image: linear-gradient(to right, red, blue);
+          background-color: 
+          #e2d703;
+          border: solid black 2px;
+          padding: 5px 8px;
           border-radius: 8px;
         }
         #form-dn {
@@ -41,8 +46,8 @@ body {
               height: 3500px;
               display: block;
               content: "";
-              top: -750px;
-              left: -850px;
+              top: -750px !important;
+              left: -850px !important;
               backdrop-filter: blur(20px);
               z-index: -1;
             }
@@ -120,7 +125,7 @@ body {
         color: aliceblue;
         //background-color: black;
         background-image: linear-gradient(to bottom, transparent, black);
-        width: 100%;
+        width: 1500px;
         height: 1000px;
         position: relative;
         font-weight: 800;
@@ -158,8 +163,8 @@ body {
       }
       #ads2 {
         color: aliceblue;
-        width: 100%;
-        height: 100%;
+        width: 1500px;
+        height: fit-content;
         position: relative;
         font-weight: 800;
         h1 {
@@ -215,15 +220,15 @@ body {
       }
       #chuacontentvabovochoday {
         transform: translate(450px, -400px);
+        position: relative;
         #content {
-          position: relative;
           p {
             font-size: 30px;
             font-weight: 1000;
             color: #fcf22f;
           }
           h3 {
-            font-size: 56px;
+            font-size: 50px;
             &::first-letter {
               color: white;
             }
@@ -248,7 +253,8 @@ body {
           justify-content: center;
           align-items: center;
           width: 500px;
-          top: 140%;
+          height: 90px;
+          top: 100%;
           #icon{
             transform: translate(0,4px);
           }
@@ -480,7 +486,7 @@ body {
   #app{ 
     max-width: 390px;
     .xemphim{
-      max-width: 391px;
+      max-width: 390px;
       height: 1900px;
       .phimne{
 
@@ -502,7 +508,7 @@ body {
       display: flex;
       flex-direction: row;
       max-width: 390px;
-      height: 1300px;
+      height: 1400px;
       #btnanh{
         transform: translate(20px,-300px) !important;
 
@@ -510,14 +516,33 @@ body {
       #chuacontentvabovochoday {
         #content {
           position: relative;
-          transform: translate(-760px,500px) !important;
+          transform: translate(-760px,530px) !important;
           text-align: left;
+          p {
+            font-size: 22px;
+            font-weight: 1000;
+            color: #fcf22f;
+          }
+          h3 {
+            font-size: 25px;
+            max-width: 350px;
+           
+            color: #fcf22f;
+            font-weight: 700;
+          }
+          h5 {
+            width: 650px;
+            color: #958c7d;
+            font-size: 15px;
+            max-width: 360px;
+          }
          
         }
         #bovochoday {
-        transform: translate(-760px,480px) !important;
+        transform: translate(-760px,530px) !important;
         max-width:  330px;
         max-height: 200px;
+        height: fit-content;
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
@@ -552,7 +577,7 @@ body {
       }
       #dow {
         transform: rotate(0) translateY(100%);
-        transform: translate(-110px,250px);
+        transform: translate(-110px,300px);
        
       }
       #dow:hover {
@@ -567,21 +592,24 @@ max-width:  390px;
       height: 350px!important;
       
       #btn-dn {
-        transform: translate(-20px,0);
+        transform: translate(-130px,-10px);
         padding: 4px;
         border:  solid red 1px !important;
         background-color: rgb(184, 12, 12) !important;
         background-image: none !important;
         font-size: 12px;
+
       }
       #form-dn {
         form {
           position: absolute;
           top:0;
-          transform: translate( -650px,-1500px) !important;
+          transform: translate(-150px,-400px) !important;
+          z-index: 10 !important;
           &::before {
-            transform: translate(-1000px,-1000px);
+           // transform: translate(1000px,1000px);
             height: 3000px !important;
+            z-index: -1;
           }
          
         }
@@ -612,7 +640,7 @@ max-width:  390px;
     }
     #ads1{
       text-align: center;
-      width: 400px !important;
+      width: 390px !important;
       height: 350px!important ;
       h1{
         z-index: 9;
@@ -626,18 +654,18 @@ max-width:  390px;
         width: 350px !important;
       }
       img{
-        transform: translate(-9px,-140px);
+        transform: translate(0px,-140px);
         width: 400px !important;
       }
       video{
-        width: 380px !important;
-        transform: translate(-9px,-147px);
+        width: 350px !important;
+        transform: translate(-50px,-147px);
 
 
       }
     }
     #ads2 {
-      width: 405px !important;
+      width: 390px !important;
       h1 {
         z-index: 9;
         font-size: 18px !important;
@@ -650,13 +678,16 @@ max-width:  390px;
        width: 350px !important;
       }
       img {
-        transform: translate(-10px,-60px);
+        width: 390px !important;
+        transform: translate(-0px,-60px);
       }
     }
 }
 
 
 .menut {
+  position: sticky;
+  top: 0;
  max-width: 390px;
 color: aliceblue;
 background-color: green !important;
@@ -712,6 +743,7 @@ backdrop-filter: blur(10px) !important;
       
       }
       &::after {
+        height: 52px !important; 
         transform: translate(5px,20px) !important;
         font-size: 18px !important;
       }
@@ -742,7 +774,7 @@ backdrop-filter: blur(10px) !important;
         color: antiquewhite;
         border: solid greenyellow 3px;
         font-size: 12px;
-        padding: 8px;
+        padding: 5px !important;
         border-radius: 8px;
         z-index: 9;
       }

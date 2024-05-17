@@ -24,14 +24,14 @@ const menu = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item active ">
-                <a className="nav-link .text-primary" href="#">
+            <ul className="navbar-nav text-light ">
+              <li className="nav-item  text-light">
+                <a className="nav-link text-light" href="#">
                   <Link to={`/trangchu`} id="link"> Trang chủ </Link>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link .text-primary" href="#">
+                <a className="nav-link " href="#">
                   Liên hệ
                 </a>
               </li>

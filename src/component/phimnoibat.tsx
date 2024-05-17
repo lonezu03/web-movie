@@ -10,7 +10,7 @@ const Phimnoibat = () => {
       id: 97,
       name: "Thượng Thực",
       link_img:
-        "https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/176627/Originals/poster-phim-hoat-hinh-1.jpg",
+        "https://i.imgur.com/il7aizK.jpg",
 
       link: "https://trailer.vieon.vn/Teaser_ThuongThuc.mp4",
       mota: "Tử Khâm được tuyển vào cung, quyết trở thành bậc thầy ẩm thực. Nàng gặp và phải lòng Chiêm Cơ, viết nên chuyện tình đầy cảm xúc chốn Hoàng cung.",
@@ -20,7 +20,7 @@ const Phimnoibat = () => {
       id: 98,
       name: "Bầu trời rực đỏ",
       link_img:
-        "https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/176627/Originals/poster-phim-hoat-hinh-1.jpg",
+        "https://i.mpcdn.top/poster/bau-troi-ruc-do-9339.jpg?1636211017",
 
       link: "https://trailer.vieon.vn/Teaser_BauTroiRucDo.mp4",
       mota: "Quỷ Vương trùng sinh vào Ha Ram. Nữ thần sinh mệnh lấy đi đôi mắt của cậu để nhường người sẽ giải cứu thế giới. Thiên mệnh 2 đứa trẻ bắt đầu.",
@@ -30,7 +30,7 @@ const Phimnoibat = () => {
       id: 99,
       name: "Trường nguyệt tẫn minh",
       link_img:
-        "https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/176627/Originals/poster-phim-hoat-hinh-1.jpg",
+        "https://i.mpcdn.top/poster/truong-nguyet-tan-minh-11140.jpg?1683627748",
 
       link: "https://www.youtube.com/embed/5XPaB6Gu9XY",
       mota: "Để cứu lấy chúng sinh, con gái tông chưởng môn quay ngược về quá khứ để ngăn cản tên ma thần trước khi hắn bị tà cốt trong người xâm chiếm hoàn toàn.",
@@ -42,7 +42,7 @@ const Phimnoibat = () => {
       id: 97,
       name: "Thượng Thực",
       link_img:
-        "https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/176627/Originals/poster-phim-hoat-hinh-1.jpg",
+        "https://i.imgur.com/il7aizK.jpg",
 
       link: "https://trailer.vieon.vn/Teaser_ThuongThuc.mp4",
       mota: "Tử Khâm được tuyển vào cung, quyết trở thành bậc thầy ẩm thực. Nàng gặp và phải lòng Chiêm Cơ, viết nên chuyện tình đầy cảm xúc chốn Hoàng cung.",
@@ -52,7 +52,7 @@ const Phimnoibat = () => {
       id: 98,
       name: "Bầu trời rực đỏ",
       link_img:
-        "https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/176627/Originals/poster-phim-hoat-hinh-1.jpg",
+        "https://i.mpcdn.top/poster/bau-troi-ruc-do-9339.jpg?1636211017",
 
       link: "https://trailer.vieon.vn/Teaser_BauTroiRucDo.mp4",
       mota: "Quỷ Vương trùng sinh vào Ha Ram. Nữ thần sinh mệnh lấy đi đôi mắt của cậu để nhường người sẽ giải cứu thế giới. Thiên mệnh 2 đứa trẻ bắt đầu.",
@@ -62,16 +62,16 @@ const Phimnoibat = () => {
       id: 99,
       name: "Trường nguyệt tẫn minh",
       link_img:
-        "https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/176627/Originals/poster-phim-hoat-hinh-1.jpg",
+        "https://i.mpcdn.top/poster/truong-nguyet-tan-minh-11140.jpg?1683627748",
 
       link: "https://trailer.vieon.vn/Teaser_TruongNguyetTanMinhv3.mp4",
       mota: "Để cứu lấy chúng sinh, con gái tông chưởng môn quay ngược về quá khứ để ngăn cản tên ma thần trước khi hắn bị tà cốt trong người xâm chiếm hoàn toàn.",
       theloai: "Cổ Trang",
     }
   ];
-  let phim = dsphim[0];
-  const [phimngan, setPhimngan] = useState(dsphimngan[0]);
-  const videoRef = useRef(null);
+  const [phim, setPhim] = useState(dsphim[0]);
+    const [phimngan, setPhimngan] = useState(dsphimngan[0]);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   if (videoRef.current ) {
    videoRef.current.src = phimngan.link;
   } 
@@ -81,13 +81,13 @@ const Phimnoibat = () => {
     for (let i = 0; i < dsphimngan.length; i++) {
       if (dsphimngan[i].id == phimngan.id + 1)
         { tam = dsphimngan[i];
-          vt=i
+          vt=dsphim[i];
     }}
-    console.log(tam);
+    console.log(vt);
 
     if (tam != null) {
       setPhimngan(tam);
-      phim=dsphim[vt]
+      setPhim(vt)
       if (videoRef.current) {
         videoRef.current.src = phimngan.link;
       }
@@ -96,26 +96,31 @@ const Phimnoibat = () => {
       // console.log(tam.link)
 
       // console.log(phimngan.link)
-    } else setPhimngan(dsphimngan[0]);
-  }
+    } 
+    else {
+      setPhimngan(dsphimngan[0]);
+      setPhim(dsphim[0]);
+    }}
   function back() {
     let tam;
     let vt;
     for (let i = 0; i < dsphimngan.length; i++) {
       if (dsphimngan[i].id == phimngan.id - 1)
         { tam = dsphimngan[i];
-          vt=i
+          vt=dsphim[i];
     }}
    // console.log(tam);
 
     if (tam != null) {
       setPhimngan(tam);
-      phim=dsphim[vt]
+      setPhim(vt)
       if (videoRef.current) {
         videoRef.current.src = phimngan.link;
       }
-    } else setPhimngan(dsphimngan[dsphimngan.length-1]);
-  }
+    } else
+    { setPhimngan(dsphimngan[dsphimngan.length-1]);
+      setPhim(dsphim[dsphimngan.length-1])
+    }}
   return (
     <div className="phimnoibat">
       <div>

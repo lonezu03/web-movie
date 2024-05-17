@@ -15,7 +15,7 @@ function gioithieuphim (props) {
   return (
     <div className="gioithieuphim">
       <div>
-        <button id="btnanh">
+        <button onClick={cun} id="btnanh">
           <div  id="anh">
             
           <img src={phim.link_img} alt="" />

@@ -4,7 +4,6 @@ import /*React,*/ { useState } from "react";
 
 import { NavLink, Route, Routes } from "react-router-dom";
 import TrangChu from './trangchinh.tsx'
-import MenuH from "./menuH"
 // Trong tệp my-global.d.ts
 declare global {
   interface Window {
@@ -42,14 +41,14 @@ const Home = () => {
     <Route path='/trangchu' element={<TrangChu/>}/>
 </Routes> 
       
-      <MenuH/>
+      
       <div className="chuabtn-dn">
       <button
         onClick={handleClick}
         className="dn"
         id="btn-dn"
       >
-        đăng nhập
+        Đăng nhập
       </button></div>
       {showForm && (
         <div id="form-dn">
