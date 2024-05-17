@@ -474,7 +474,11 @@ body {
 }
 
 @media only screen and (max-width: 390px) {
+  body{
+    max-width: 390px !important;
+  }
   #app{ 
+    max-width: 390px;
     .xemphim{
       max-width: 391px;
       height: 1900px;
@@ -502,26 +506,13 @@ body {
       #btnanh{
         transform: translate(20px,-300px) !important;
 
-      #anh {
-        //margin-left: 8px;
-        img {
-          
-        }
-      }}
+    }
       #chuacontentvabovochoday {
         #content {
           position: relative;
           transform: translate(-760px,500px) !important;
           text-align: left;
-          p {
-            
-          }
-          h3 {
-            
-          }
-          h5 {
-            
-          }
+         
         }
         #bovochoday {
         transform: translate(-760px,480px) !important;
@@ -536,9 +527,7 @@ body {
             width: 30px;
             align-items: center !important;
           }
-          img {
-            
-          }
+          
           h2 {
             transform: translate(-30px,15px);
             min-width: 140px;
@@ -564,9 +553,7 @@ body {
       #dow {
         transform: rotate(0) translateY(100%);
         transform: translate(-110px,250px);
-        p {
-          
-        }
+       
       }
       #dow:hover {
         background-color: #7a7507;
@@ -598,15 +585,7 @@ max-width:  390px;
           }
          
         }
-        #btnCancle {
-          
-        }
-        #dangnhap {
-          
-        }
-        #dangnhap:hover {
-
-        }
+      
       }
       #bd {
         height: 300px !important;
@@ -704,7 +683,6 @@ backdrop-filter: blur(10px) !important;
       font-size: 12px;
       color: rgb(0, 0, 108);
       font-weight: 600;
-
       #link {
         text-decoration: none;
       }
