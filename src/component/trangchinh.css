@@ -75,7 +75,12 @@
   font-weight: 700;
   text-decoration: underline;
 }
-
+.LienHe{
+  list-style-type: none;
+}
+.lh{
+  list-style-type: none;
+}
 @media only screen and (max-width: 600px) {
   .trangchu {
     max-width: 390px;

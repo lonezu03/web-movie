@@ -42,7 +42,7 @@ const Trangchinh = () => {
         "https://th.bing.com/th/id/OIP.ZjUQhr7OBpchWvXwwv3xEwHaK8?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
       link: "https://www.youtube.com/embed/dLptjP1RKmQ",
       mota: "Siêu đại chiến Thái Bình Dương: Bộ phim kể về cuộc chiến khốc liệt giữa loài người với những sinh vật khổng lồ được gọi là Kaiju trồi lên từ mặt biển phá moi thứ trên mặt đất cản đường chúng . Loài người chiến đấu quyết liệt để chống trả chúng. Cuộc chiến kéo dài nhiều năm lấy đi tính mạng bao nhiêu người. Các nhà Quân sự học đã chế ra một loại robot khồng lồ - Jeager, được điều khiển bởi 2 phi công, tâm trí họ được khóa tại 1 cầu nối thần kinh",
-      theloai: "viễn tưởng",
+      theloai: "Viễn tưởng",
     },
     {
       id: 5,
