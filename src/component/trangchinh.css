@@ -75,20 +75,15 @@
   font-weight: 700;
   text-decoration: underline;
 }
-.LienHe{
-  list-style-type: none;
-}
-.lh{
-  list-style-type: none;
-}
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 390px) {
   .trangchu {
     max-width: 390px;
   }
   .trangchu .chuaphimvaloc {
     display: flex;
     flex-direction: column;
-    background-color: #222126;
+    background-color: #555458;
     align-items: center;
   }
   .trangchu .chuaphimvaloc .column1 {

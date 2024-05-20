@@ -3,11 +3,18 @@
 
 //import { byPrefixAndName } from '@awesome.me/kit-KIT_CODE/icons'
 const footer = () => {
+  function cun(){
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth" // Cuộn mềm mại
+    });
+  }
   return (
     <div className="footer">
-      <div style={{margin:'10px'}}> 
-        <p> Contact us :</p>
+      <div style={{margin:'10px'}} className="chuaul  "> 
+        
         <ul className="LienHe">
+          <li id="dau"><p> Contact us :</p></li>
             <li> <i className="fa-solid fa-envelope"></i> phanthanhvu8548@gmail.com</li>
             <li> <i className="fa-solid fa-phone"></i> lonezu03@gmail.com </li>
             <li> <i className="fa-solid fa-envelope"></i> dannytang540@gmail.com</li>
@@ -15,18 +22,24 @@ const footer = () => {
         </ul>
       </div>
 
-      <div style={{paddingLeft:'100px'}}>       
-        <ul className="lh">
-          <p> <i className="fa-solid fa-map-location"></i> 180 Cao Lỗ , Phường 4, Quận 8, TP. Hồ Chí Minh</p>
+      <div >       
+        <ul className="diachi">
+        <li id="dau"><p> Contact us :</p></li>
+
+          <li><p> <i className="fa-solid fa-map-location"></i> 180 Cao Lỗ , Phường 4, Quận 8, TP. Hồ Chí Minh</p></li>
+          <li><p> <i className="fa-solid fa-map-location"></i> 3/34 Hoàng Hoa Thám , Quận Đống Đa, TP. Hà Nội</p></li>
+          <li><p> <i className="fa-solid fa-map-location"></i>127B1/4 Đường T11 ấp 2 xã An Phú Tây Bình Chánh </p></li>
         </ul>
       </div>
 
-      <div style={{paddingLeft:'150px'}}>
+      <div className="fb">
         <ul>
-          <h1> Filmlane </h1>
-          <i className  ="fa-brands fa-facebook fa-2xl"></i>
-          <li> </li>
-          <i className="fa-brands fa-instagram fa-2xl"></i>
+          <li><button onClick={cun}> Filmlane </button></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100011468771607"><i className  ="fa-brands fa-facebook fa-2xl"></i>vũ</a></li>
+          <li><a href="https://www.facebook.com/hashe.ichi"><i className="fa-brands fa-instagram fa-2xl"></i>đẹt</a></li>
+          
+          
+          
         </ul>
       </div>
     </div>

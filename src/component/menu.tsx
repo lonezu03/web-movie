@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse } from '@awesome.me/kit-KIT_CODE/icons/classic/solid';
 const menu = () => {
   console.log(window.loai)
   return (
@@ -46,7 +47,8 @@ const menu = () => {
                 </a>
               </li>
             </ul>
-            <div id="user"><p>user: {window.tenTK+" ("+window.loai+")"}</p></div>
+            <div id="user"><p> 
+     {window.tenTK+" ("+window.loai+")"}</p></div>
 
           </div>
 
