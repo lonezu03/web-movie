@@ -22,7 +22,7 @@ body #app #home-tong #home {
   position: relative;
   width: 100%;
   height: 800px;
-  background-color: green;
+  background-color: #84bb97;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -307,9 +307,6 @@ body .xemphim .phimne #my_iframe {
   left: 60px;
   transform: translate(20px, 200px) !important;
 }
-body .footer {
-  display: flex;
-}
 body .menut {
   align-items: center;
   width: 1500px;
@@ -353,35 +350,35 @@ body .menut .menuall #user {
   font-size: 22px;
   font-weight: 500;
 }
-body .footer {
+body .footer ul {
+  list-style-type: none;
+}
+body .footer .chua3ul {
   display: flex;
   height: auto;
   gap: 100px;
   padding-top: 20px;
-  transform: translate(10%, 0);
   color: white;
+  transform: translate(10%, 0);
 }
-body .footer ul {
-  list-style-type: none;
-}
-body .footer .chuaul .lienhe {
+body .footer .chua3ul .chuaul .lienhe {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-body .footer .fb > ul {
+body .footer .chua3ul .fb > ul {
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin-left: 50px;
 }
-body .footer .fb > ul #btt {
+body .footer .chua3ul .fb > ul #btt {
   background-color: transparent;
-  border: solid red;
+  border: solid rgb(95, 174, 111);
   padding: 5px 8px;
   border-radius: 5px;
 }
-body .footer .fb > ul #btt:hover {
+body .footer .chua3ul .fb > ul #btt:hover {
   color: #84bb97;
   background-color: white;
   border: 0px;
@@ -487,6 +484,9 @@ body .phimnoibat #noibat #iconnext {
     max-width: 390px;
     height: -moz-fit-content;
     height: fit-content;
+  }
+  #app .xemphim .phimne {
+    height: 100px !important;
   }
   #app .xemphim .phimne h1 {
     transform: translate(0, -400px);
@@ -745,19 +745,21 @@ body .phimnoibat #noibat #iconnext {
     font-size: 8px;
   }
   #app .footer {
+    background-color: #181d23;
+  }
+  #app .footer .chua3ul {
     font-size: 12px;
-    padding-left: 10px;
     margin: 0;
     gap: 0;
-    transform: translate(-30px, -50px);
+    transform: translate(-13px, 0px);
     max-width: 390px;
     flex-wrap: wrap;
     background-color: #181d23;
   }
-  #app .footer ul {
+  #app .footer .chua3ul ul {
     list-style-type: none;
   }
-  #app .footer .fb > ul {
-    transform: translate(200px, -250px);
+  #app .footer .chua3ul .fb > ul {
+    transform: translate(140px, -270px);
   }
 }/*# sourceMappingURL=App.css.map */

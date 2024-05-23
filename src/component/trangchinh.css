@@ -1,3 +1,9 @@
+.trangchu .tim {
+  transform: translate(1130px, 70px);
+}
+.trangchu .tim #form #query {
+  height: 35px;
+}
 .trangchu .chuaphimvaloc {
   background-color: #181d23;
   display: flex;
@@ -79,6 +85,12 @@
 @media only screen and (max-width: 390px) {
   .trangchu {
     max-width: 390px;
+  }
+  .trangchu .tim {
+    transform: translate(48px, 70px);
+  }
+  .trangchu .tim #form #query {
+    height: 35px;
   }
   .trangchu .chuaphimvaloc {
     display: flex;

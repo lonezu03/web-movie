@@ -11,6 +11,7 @@ const footer = () => {
   }
   return (
     <div className="footer">
+      <div className="chua3ul">
       <div style={{margin:'10px'}} className="chuaul  "> 
         
         <ul className="LienHe">
@@ -35,12 +36,13 @@ const footer = () => {
       <div className="fb">
         <ul>
           <li><button onClick={cun} id="btt"> Back to top </button></li>
-          <li><a href="https://www.facebook.com/profile.php?id=100011468771607"><i className  ="fa-brands fa-facebook fa-2xl"></i>vũ</a></li>
-          <li><a href="https://www.facebook.com/hashe.ichi"><i className="fa-brands fa-instagram fa-2xl"></i>đẹt</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100011468771607"><i className  ="fa-brands fa-facebook fa-2xl"></i>Phan Thanh Vũ DH52112108</a></li>
+          <li><a href="https://www.facebook.com/hashe.ichi"><i className="fa-brands fa-instagram fa-2xl"></i>Tăng Cẩm Đạt DH5211</a></li>
           
           
           
         </ul>
+      </div>
       </div>
     </div>
   );

@@ -124,11 +124,28 @@ const Trangchinh = () => {
     });
     setdsphim1(dstam);
   }
+  function tim(e) {
+    const dstam = dsphim.filter((el) => {
+      return el.name.includes(e.target.value);
+    });
+    setdsphim1(dstam);
+  }
   return (
     <div className="trangchu">
       {<Menu />}
+      
       {<Phimnoibat />}
-
+      <div className="tim">
+      <form role="search" id="form">
+            <input
+              type="search"
+              id="query"
+              name="q"
+              placeholder="Search.."
+              onChange={tim}
+            ></input>
+          </form>
+          </div>
       <div className="chuaphimvaloc">
         <div className="nensang"></div>
         <div className="column1" style={{}}>
