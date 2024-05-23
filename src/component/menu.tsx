@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse } from '@awesome.me/kit-KIT_CODE/icons/classic/solid';
 const menu = () => {
   console.log(window.loai)
   return (
