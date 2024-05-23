@@ -24,7 +24,7 @@ const footer = () => {
 
       <div >       
         <ul className="diachi">
-        <li id="dau"><p> Contact us :</p></li>
+        <li id="dau"><p> Address:</p></li>
 
           <li><p> <i className="fa-solid fa-map-location"></i> 180 Cao Lỗ , Phường 4, Quận 8, TP. Hồ Chí Minh</p></li>
           <li><p> <i className="fa-solid fa-map-location"></i> 3/34 Hoàng Hoa Thám , Quận Đống Đa, TP. Hà Nội</p></li>
@@ -34,7 +34,7 @@ const footer = () => {
 
       <div className="fb">
         <ul>
-          <li><button onClick={cun}> Filmlane </button></li>
+          <li><button onClick={cun} id="btt"> Back to top </button></li>
           <li><a href="https://www.facebook.com/profile.php?id=100011468771607"><i className  ="fa-brands fa-facebook fa-2xl"></i>vũ</a></li>
           <li><a href="https://www.facebook.com/hashe.ichi"><i className="fa-brands fa-instagram fa-2xl"></i>đẹt</a></li>
           

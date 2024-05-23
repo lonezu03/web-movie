@@ -33,10 +33,14 @@ body {
           z-index: 9;
           //background-image: linear-gradient(to right, red, blue);
           background-color: 
-          #e2d703;
+          #245d3c;
           border: solid black 2px;
           padding: 5px 8px;
           border-radius: 8px;
+          &:hover{
+            color: #245d3c;
+            background-color: white;
+          }
         }
         #form-dn {
           form {
@@ -197,7 +201,7 @@ body {
     background-color: rgb(0, 0, 0);
   }
   .xemphim {
-    background-color: rgb(96, 88, 88);
+    background-color: #181d23;
 
     z-index: 2;
     .gioithieuphim {
@@ -385,12 +389,20 @@ body {
   }
   .footer{
     display: flex;
+    height: auto;
     gap : 100px;
-color:white ;
+    padding-top: 20px;
+    transform: translate(10%,0);
+    color:white ;
     ul{
       list-style-type: none;
     }
    .chuaul{
+    .lienhe{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
 
    }
    .diachi{
@@ -400,6 +412,19 @@ color:white ;
     display: flex;
     flex-direction: column;
     gap:30px;
+    margin-left: 50px;
+    #btt{
+      background-color: transparent;
+      border: solid red;
+      padding: 5px 8px;
+      border-radius: 5px;
+      &:hover{
+        color: #84bb97;
+        background-color: white;
+        border: 0px;
+      }
+    }
+    
    }
   
   }
@@ -509,7 +534,7 @@ color:white ;
     max-width: 390px;
     .xemphim{
       max-width: 390px;
-      height: 1900px;
+      height: fit-content;
       .phimne{
 
         h1{
@@ -712,7 +737,7 @@ max-width:  390px;
   top: 0;
  max-width: 390px;
 color: aliceblue;
-background-color: green !important;
+background-color: #84bb97 !important;
 backdrop-filter: blur(10px) !important;
 
   img {
@@ -750,7 +775,8 @@ backdrop-filter: blur(10px) !important;
       font-weight: 500;
     }
   }
-}}
+}
+
 .phimnoibat{
   max-width: 390px;
   height: 300px;
@@ -812,5 +838,43 @@ backdrop-filter: blur(10px) !important;
       font-size: 8px;
     } 
   }
+  
 }
+.footer{
+  font-size: 12px;
+  padding-left: 10px;
+  margin: 0;
+  gap: 0;
+  transform: translate(-30px,-50px);
+  max-width: 390px;
+  flex-wrap: wrap;
+  background-color: #181d23;
+
+  ul{
+    list-style-type: none;
+  }
+ .chuaul{
+  .lienhe{
+    
+  }
+
+ }
+ .diachi{
+
+ }
+ .fb>ul{
+  transform: translate(200px,-250px);
+  
+  #btt{
+   
+    &:hover{
+      
+    }
+  }
+  
+ }
+
 }
+  }
+}
+

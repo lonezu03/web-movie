@@ -31,10 +31,14 @@ body #app #home-tong #home #btn-dn {
   top: 2%;
   right: 10%;
   z-index: 9;
-  background-color: #e2d703;
+  background-color: #245d3c;
   border: solid black 2px;
   padding: 5px 8px;
   border-radius: 8px;
+}
+body #app #home-tong #home #btn-dn:hover {
+  color: #245d3c;
+  background-color: white;
 }
 body #app #home-tong #home #form-dn form {
   z-index: 10;
@@ -186,7 +190,7 @@ body .trangchu {
   background-color: rgb(0, 0, 0);
 }
 body .xemphim {
-  background-color: rgb(96, 88, 88);
+  background-color: #181d23;
   z-index: 2;
 }
 body .xemphim .gioithieuphim {
@@ -351,16 +355,36 @@ body .menut .menuall #user {
 }
 body .footer {
   display: flex;
+  height: auto;
   gap: 100px;
+  padding-top: 20px;
+  transform: translate(10%, 0);
   color: white;
 }
 body .footer ul {
   list-style-type: none;
 }
+body .footer .chuaul .lienhe {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 body .footer .fb > ul {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-left: 50px;
+}
+body .footer .fb > ul #btt {
+  background-color: transparent;
+  border: solid red;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+body .footer .fb > ul #btt:hover {
+  color: #84bb97;
+  background-color: white;
+  border: 0px;
 }
 body .phimnoibat {
   color: antiquewhite;
@@ -461,7 +485,8 @@ body .phimnoibat #noibat #iconnext {
   }
   #app .xemphim {
     max-width: 390px;
-    height: 1900px;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   #app .xemphim .phimne h1 {
     transform: translate(0, -400px);
@@ -633,7 +658,7 @@ body .phimnoibat #noibat #iconnext {
     top: 0;
     max-width: 390px;
     color: aliceblue;
-    background-color: green !important;
+    background-color: #84bb97 !important;
     -webkit-backdrop-filter: blur(10px) !important;
             backdrop-filter: blur(10px) !important;
   }
@@ -664,44 +689,44 @@ body .phimnoibat #noibat #iconnext {
     width: 60px;
     font-weight: 500;
   }
-  .phimnoibat {
+  #app .phimnoibat {
     max-width: 390px;
     height: 300px;
   }
-  .phimnoibat #noibat {
+  #app .phimnoibat #noibat {
     position: relative;
     height: -moz-fit-content;
     height: fit-content;
     z-index: 1;
   }
-  .phimnoibat #noibat::before {
+  #app .phimnoibat #noibat::before {
     display: none !important;
   }
-  .phimnoibat #noibat::after {
+  #app .phimnoibat #noibat::after {
     height: 52px !important;
     transform: translate(5px, 20px) !important;
     font-size: 18px !important;
   }
-  .phimnoibat #noibat #vd {
+  #app .phimnoibat #noibat #vd {
     max-width: 390px;
   }
-  .phimnoibat #noibat .noidungpnb {
+  #app .phimnoibat #noibat .noidungpnb {
     width: 280px;
     transform: translate(0, -110%) !important;
   }
-  .phimnoibat #noibat .noidungpnb #chuatenvatheloai {
+  #app .phimnoibat #noibat .noidungpnb #chuatenvatheloai {
     width: 240px !important;
   }
-  .phimnoibat #noibat .noidungpnb #chuatenvatheloai #tenphim {
+  #app .phimnoibat #noibat .noidungpnb #chuatenvatheloai #tenphim {
     margin-top: 30px;
     margin-bottom: 0;
     transform: translate(0, 8px);
     margin-left: 3px;
   }
-  .phimnoibat #noibat .noidungpnb #chuatenvatheloai #theloai {
+  #app .phimnoibat #noibat .noidungpnb #chuatenvatheloai #theloai {
     transform: translate(-20px, 60px) !important;
   }
-  .phimnoibat #noibat .noidungpnb #link {
+  #app .phimnoibat #noibat .noidungpnb #link {
     text-decoration: none;
     color: antiquewhite;
     border: solid greenyellow 3px;
@@ -710,13 +735,29 @@ body .phimnoibat #noibat #iconnext {
     border-radius: 8px;
     z-index: 9;
   }
-  .phimnoibat #noibat .noidungpnb p {
+  #app .phimnoibat #noibat .noidungpnb p {
     font-size: 12px !important;
     max-width: 300px;
     margin-left: 3px !important;
   }
-  .phimnoibat #noibat #iconnext {
+  #app .phimnoibat #noibat #iconnext {
     transform: translate(-150%, -20px);
     font-size: 8px;
+  }
+  #app .footer {
+    font-size: 12px;
+    padding-left: 10px;
+    margin: 0;
+    gap: 0;
+    transform: translate(-30px, -50px);
+    max-width: 390px;
+    flex-wrap: wrap;
+    background-color: #181d23;
+  }
+  #app .footer ul {
+    list-style-type: none;
+  }
+  #app .footer .fb > ul {
+    transform: translate(200px, -250px);
   }
 }/*# sourceMappingURL=App.css.map */
