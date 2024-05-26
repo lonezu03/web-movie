@@ -5,14 +5,14 @@ import { faCircleChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faCircleChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 const Phimnoibat = () => {
-  const dsphim = [
+ const dsphim = [
     {
       id: 97,
       name: "Thượng Thực",
       link_img:
         "https://i.imgur.com/il7aizK.jpg",
 
-      link: "https://trailer.vieon.vn/Teaser_ThuongThuc.mp4",
+      link: "https://www.youtube.com/embed/UadMlVdcb7s",
       mota: "Tử Khâm được tuyển vào cung, quyết trở thành bậc thầy ẩm thực. Nàng gặp và phải lòng Chiêm Cơ, viết nên chuyện tình đầy cảm xúc chốn Hoàng cung.",
       theloai: "Cổ Trang",
     },
@@ -20,9 +20,9 @@ const Phimnoibat = () => {
       id: 98,
       name: "Bầu trời rực đỏ",
       link_img:
-        "https://i.mpcdn.top/poster/bau-troi-ruc-do-9339.jpg?1636211017",
+        "https://www.youtube.com/embed/fh0SIRK-J8c",
 
-      link: "https://trailer.vieon.vn/Teaser_BauTroiRucDo.mp4",
+      link: "https://www.youtube.com/embed/fh0SIRK-J8c",
       mota: "Quỷ Vương trùng sinh vào Ha Ram. Nữ thần sinh mệnh lấy đi đôi mắt của cậu để nhường người sẽ giải cứu thế giới. Thiên mệnh 2 đứa trẻ bắt đầu.",
       theloai: "Cổ Trang",
     },

@@ -1,10 +1,10 @@
 import Home from "./home";
-import Homeads from "./home-ads"
-import Homeads2 from "./Home-ads2";
+import Homeads from "./homeads1"
+import Homeads2 from "./homeads2";
 import Footer from "./footer";
 import MenuH from "./menuH"
 
-const ads=() =>{
+const Hometong=() =>{
 
     return(
         <div id="home-tong">
@@ -16,4 +16,4 @@ const ads=() =>{
         </div>
 
     )}
-export default ads
+export default Hometong

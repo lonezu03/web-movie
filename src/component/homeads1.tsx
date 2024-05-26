@@ -1,7 +1,7 @@
-const ads=() =>{
+const Homeads1=() =>{
 
     return(
-        <div id="ads1">
+        <div className="homeads1">
             <h1>
                 Thưởng thức trên TV của bạn
                  
@@ -16,4 +16,4 @@ const ads=() =>{
         </div>
     )
 }      
-export default ads
+export default Homeads1

@@ -4,6 +4,7 @@ import Menu from "./menu";
 import Phimnoibat from "./phimnoibat";
 import Footer from "./footer";
 import { useState } from "react";
+
 const Trangchinh = () => {
   // const location = useLocation(); // Lấy data được truyền qua state
   // const user = location.state?.loai;

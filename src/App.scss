@@ -15,6 +15,7 @@ body {
     #home-tong {
       width: 100%;
       height: fit-content;
+      display: block;
       background-size: cover;
       background-color: #84bb97;
       #home {
@@ -26,9 +27,8 @@ body {
         object-fit: cover;
 
         #btn-dn {
-          //position: absolute;
-          position: fixed;
-          top: 2%;
+          position: absolute;
+          top: -8%;
           right: 10%;
           z-index: 9;
           //background-image: linear-gradient(to right, red, blue);
@@ -125,9 +125,9 @@ body {
           }
         }
       }
-      #ads1 {
+      .homeads1 {
         color: aliceblue;
-        //background-color: black;
+        display: block !important;
         background-image: linear-gradient(to bottom, transparent, black);
         width: 1500px;
         height: 1000px;
@@ -165,9 +165,10 @@ body {
           // transform: translate(-50%, -50%);
         }
       }
-      #ads2 {
+      .homeads2 {
         color: aliceblue;
         width: 1500px;
+        display: block !important;
         height: fit-content;
         position: relative;
         font-weight: 800;
@@ -532,8 +533,10 @@ body {
   }
   #app{ 
     max-width: 390px;
+    width: 390px !important;
     .xemphim{
       max-width: 390px;
+      width: 390px !important;
       height: fit-content;
       .phimne{
         height: 100px !important;
@@ -545,6 +548,7 @@ body {
           padding-top: 0;
           margin-top: 0;
           max-width: 390px;
+          width: 390px;
           height: 300px;
           transform: translate(0,-400px);
         }
@@ -639,19 +643,22 @@ max-width:  390px;
       height: 350px!important;
       
       #btn-dn {
-        transform: translate(-130px,-10px);
+        transform: translate(-20px,-13px);
         padding: 4px;
         border:  solid red 1px !important;
         background-color: rgb(184, 12, 12) !important;
-        background-image: none !important;
+       // background-image: none !important;
         font-size: 12px;
-
+        &:hover{
+          background-color: white;
+          color: red;
+        }
       }
       #form-dn {
         form {
           position: absolute;
           top:0;
-          transform: translate(-150px,-400px) !important;
+          transform: translate(-100px,-200px) !important;
           z-index: 10 !important;
           &::before {
            // transform: translate(1000px,1000px);
@@ -666,7 +673,6 @@ max-width:  390px;
         height: 300px !important;
 
         &::before {
-          //display: none ;
           height: 300px !important;
          
         }
@@ -685,8 +691,9 @@ max-width:  390px;
         }
       }
     }
-    #ads1{
+    .homeads1{
       text-align: center;
+      display: block !important ;
       width: 390px !important;
       height: 350px!important ;
       h1{
@@ -711,7 +718,8 @@ max-width:  390px;
 
       }
     }
-    #ads2 {
+    .homeads2 {
+      display: block !important;
       width: 390px !important;
       h1 {
         z-index: 9;
@@ -767,11 +775,11 @@ backdrop-filter: blur(10px) !important;
     }
     #user {
       position: absolute;
-      transform: translate(20px, 8px);
+      transform: translate(15px, 8px);
       color: rgb(72, 72, 219);
       right: 2px;
       font-size: 10px;
-      width: 60px;
+      width: 50px;
       font-weight: 500;
     }
   }

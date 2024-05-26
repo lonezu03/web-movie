@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 const menu = () => {
-  console.log(window.loai)
+  console.log(window.loai);
   return (
     <div className="menut">
       <div className="menuall">
         <nav className="navbar navbar-expand color-white   menu">
           <Link to={"/trangchu"}>
-            <img id="logo"
+            <img
+              id="logo"
               src="https://movie-detail-drab.vercel.app/assets/images/logo.svg"
               alt=""
             />
@@ -26,7 +29,10 @@ const menu = () => {
             <ul className="navbar-nav text-light ">
               <li className="nav-item  text-light">
                 <a className="nav-link text-light" href="#">
-                  <Link to={`/trangchu`} id="link"> Trang chủ </Link>
+                  <Link to={`/trangchu`} id="link">
+                    {" "}
+                    Trang chủ{" "}
+                  </Link>
                 </a>
               </li>
               <li className="nav-item">
@@ -45,11 +51,13 @@ const menu = () => {
                 </a>
               </li>
             </ul>
-            <div id="user"><p> 
-     {window.tenTK+" ("+window.loai+")"}</p></div>
-
+            <div id="user">
+              <p>
+                <FontAwesomeIcon icon={faUser} />{" "}
+                {window.tenTK + " (" + window.loai + ")"}
+              </p>
+            </div>
           </div>
-
         </nav>
 
         {/* <div className="search-container ">
