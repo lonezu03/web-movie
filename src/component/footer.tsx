@@ -37,7 +37,7 @@ const footer = () => {
         <ul>
           <li><button onClick={cun} id="btt"> Back to top </button></li>
           <li><a href="https://www.facebook.com/profile.php?id=100011468771607"><i className  ="fa-brands fa-facebook fa-2xl"></i>Phan Thanh Vũ DH52112108</a></li>
-          <li><a href="https://www.facebook.com/hashe.ichi"><i className="fa-brands fa-instagram fa-2xl"></i>Tăng Cẩm Đạt DH5211</a></li>
+          <li><a href="https://www.facebook.com/hashe.ichi"><i className="fa-brands fa-instagram fa-2xl"></i>Tăng Cẩm Đạt DH52110786</a></li>
           
           
           
