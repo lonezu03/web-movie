@@ -27,8 +27,8 @@ body #app #home-tong #home {
      object-fit: cover;
 }
 body #app #home-tong #home #btn-dn {
-  position: fixed;
-  top: 2%;
+  position: absolute;
+  top: -8%;
   right: 10%;
   z-index: 9;
   background-color: #245d3c;
@@ -578,12 +578,16 @@ body .phimnoibat #noibat #iconnext {
     height: 350px !important;
   }
   #app #home-tong #home #btn-dn {
-    transform: translate(-130px, -10px);
+    transform: translate(-20px, -13px);
     padding: 4px;
     border: solid red 1px !important;
     background-color: rgb(184, 12, 12) !important;
     background-image: none !important;
     font-size: 12px;
+  }
+  #app #home-tong #home #btn-dn:hover {
+    background-color: white;
+    color: red;
   }
   #app #home-tong #home #form-dn form {
     position: absolute;
@@ -682,11 +686,11 @@ body .phimnoibat #noibat #iconnext {
   }
   #app .menut .menuall #user {
     position: absolute;
-    transform: translate(20px, 8px);
+    transform: translate(15px, 8px);
     color: rgb(72, 72, 219);
     right: 2px;
     font-size: 10px;
-    width: 60px;
+    width: 50px;
     font-weight: 500;
   }
   #app .phimnoibat {
